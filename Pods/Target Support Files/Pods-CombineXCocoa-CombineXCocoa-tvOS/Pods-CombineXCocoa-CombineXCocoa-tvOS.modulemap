@@ -1,0 +1,6 @@
+framework module Pods_CombineXCocoa_CombineXCocoa_tvOS {
+  umbrella header "Pods-CombineXCocoa-CombineXCocoa-tvOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

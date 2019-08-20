@@ -1,0 +1,6 @@
+framework module CombineX {
+  umbrella header "CombineX.swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

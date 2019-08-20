@@ -1,0 +1,6 @@
+framework module CombineXFoundation {
+  umbrella header "CombineX.Foundation-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

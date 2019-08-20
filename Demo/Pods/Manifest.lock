@@ -1,0 +1,27 @@
+PODS:
+  - CombineX.Cocoa (0.0.1-beta.2):
+    - CombineX.Foundation (~> 0.0.1-beta.2)
+  - CombineX.Foundation (0.0.1-beta.2):
+    - CombineX.swift (~> 0.0.1-beta.2)
+  - CombineX.swift (0.0.1-beta.2)
+
+DEPENDENCIES:
+  - CombineX.Cocoa (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CombineX.Foundation
+    - CombineX.swift
+
+EXTERNAL SOURCES:
+  CombineX.Cocoa:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CombineX.Cocoa: 44675a271e4304afba8d1c3d4253f82714fe9de0
+  CombineX.Foundation: 163b77f4d2c77b5fc68518eb395ac57b782289f1
+  CombineX.swift: 7ec90db9f1b438e14db64f2291039a879e993e01
+
+PODFILE CHECKSUM: 8d6d961005afba00d05aeec6e801e6dc9be34e24
+
+COCOAPODS: 1.7.3

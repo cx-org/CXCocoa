@@ -1,0 +1,6 @@
+framework module CombineXFoundation {
+  umbrella header "CombineX.Foundation-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

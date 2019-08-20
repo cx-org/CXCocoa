@@ -3,12 +3,9 @@ import CombineXFoundation
 
 extension CombineXBox where Base: UIControl {
     
-    public func controlEvent(_ events: UIControl.Event) -> UIControl.CX.ControlEventPublisher<Base> {
+    public func controlEvent(_ events: UIControl.Event) -> ControlEventPublisher<Base> {
         return .init(control: self.base, events: events)
     }
-}
-
-extension UIControl.CX {
     
     public struct ControlEventPublisher<Control: UIControl>: Publisher {
         

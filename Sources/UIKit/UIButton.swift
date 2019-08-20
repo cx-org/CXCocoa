@@ -3,7 +3,7 @@ import UIKit
 
 extension CombineXBox where Base: UIButton {
 
-    public var tap: UIControl.CX.ControlEventPublisher<Base> {
+    public var tap: ControlEventPublisher<Base> {
         return self.controlEvent(.touchUpInside)
     }
     

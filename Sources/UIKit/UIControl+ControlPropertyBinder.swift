@@ -8,17 +8,13 @@ extension CombineXBox where Base: UIControl {
         getter: @escaping (Base) -> Value,
         setter: @escaping (Base, Value) -> Void
     )
-        -> UIControl.CX.ControlPropertyBinder<Value>
+        -> ControlPropertyBinder<Value>
     {
-        let pub = self.controlEvent(events).map(getter).eraseToAnyPublisher()
+        let subject = CurrentValueSubject<Value, Never>(getter(self.base))
+        self.controlEvent(events).map(getter).subscribe(subject).cancel(by: self.base)
         let binder = Binder<Value>(target: self.base, action: setter)
-        return .init(publisher: pub, binder: binder)
+        return .init(publisher: subject.eraseToAnyPublisher(), binder: binder)
     }
-}
-
-public typealias ControlPropertyBinder = UIControl.CX.ControlPropertyBinder
-
-extension UIControl.CX {
     
     public struct ControlPropertyBinder<Value>: Publisher {
         public typealias Output = Value
@@ -40,7 +36,7 @@ extension UIControl.CX {
 
 extension Publisher where Failure == Never {
     
-    public func bind(to binder: UIControl.CX.ControlPropertyBinder<Output>) -> AnyCancellable {
+    public func bind(to binder: CombineXBox<UIControl>.ControlPropertyBinder<Output>) -> AnyCancellable {
         return self.bind(to: binder.binder)
     }
 }

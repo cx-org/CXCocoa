@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		236D534DEE3FC2588062AE24 /* Pods_CombineXCocoa_CombineXCocoa_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5144CAE713E0C67352397AC4 /* Pods_CombineXCocoa_CombineXCocoa_macOS.framework */; };
+		664ED8D5230C2C8300287D68 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ED8D4230C2C8300287D68 /* UITextView.swift */; };
 		6668BEAE2309A01B006C61E6 /* CombineXCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6668BEAC2309A01B006C61E6 /* CombineXCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6668BEDA2309A2C3006C61E6 /* CombineXCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6668BEAC2309A01B006C61E6 /* CombineXCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6668BEDB2309A2C4006C61E6 /* CombineXCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6668BEAC2309A01B006C61E6 /* CombineXCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -129,6 +130,7 @@
 		4EF1881D3C3B4730852B80B5 /* Pods-CombineXCocoa-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineXCocoa-watchOS.release.xcconfig"; path = "Target Support Files/Pods-CombineXCocoa-watchOS/Pods-CombineXCocoa-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		5144CAE713E0C67352397AC4 /* Pods_CombineXCocoa_CombineXCocoa_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineXCocoa_CombineXCocoa_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD86380019F1136FE56B759 /* Pods-CombineXCocoa-CombineXCocoa-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineXCocoa-CombineXCocoa-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CombineXCocoa-CombineXCocoa-tvOS/Pods-CombineXCocoa-CombineXCocoa-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		664ED8D4230C2C8300287D68 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		6668BEA92309A01B006C61E6 /* CombineXCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineXCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6668BEAC2309A01B006C61E6 /* CombineXCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineXCocoa.h; sourceTree = "<group>"; };
 		6668BEB72309A04B006C61E6 /* CombineXCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CombineXCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -340,6 +342,7 @@
 				66C29D2E230AF22B00DE6A70 /* UIDatePicker.swift */,
 				66C29D30230AF2C300DE6A70 /* UISwitch.swift */,
 				66C29D32230AF30400DE6A70 /* UITextField.swift */,
+				664ED8D4230C2C8300287D68 /* UITextView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				6692258C2309A7A70078CE5E /* Binder.swift in Sources */,
 				669225C82309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
 				669225C02309A7A70078CE5E /* associate.swift in Sources */,
+				664ED8D5230C2C8300287D68 /* UITextView.swift in Sources */,
 				669225942309A7A70078CE5E /* DispatchQueue.swift in Sources */,
 				66C29D2F230AF22B00DE6A70 /* UIDatePicker.swift in Sources */,
 				669225B42309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,

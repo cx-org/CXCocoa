@@ -29,9 +29,9 @@ extension UIControl.CX {
             
             let subject = PassthroughSubject<Output, Failure>()
             
-            let target = AnyCancellable(UIControlTarget(control: self.control, events: self.events) {
+            let target = UIControlTarget(control: self.control, events: self.events) {
                 subject.send($0)
-            })
+            }
             
             subject
                 .handleEvents(receiveCancel: {

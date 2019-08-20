@@ -7,21 +7,32 @@ PODS:
 
 DEPENDENCIES:
   - CombineX.Cocoa (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - CombineX.Foundation
-    - CombineX.swift
+  - CombineX.Foundation (from `https://github.com/luoxiu/CombineX.Foundation.git`, branch `master`)
+  - CombineX.swift (from `https://github.com/luoxiu/CombineX.git`, branch `master`)
 
 EXTERNAL SOURCES:
   CombineX.Cocoa:
     :path: "../"
+  CombineX.Foundation:
+    :branch: master
+    :git: https://github.com/luoxiu/CombineX.Foundation.git
+  CombineX.swift:
+    :branch: master
+    :git: https://github.com/luoxiu/CombineX.git
+
+CHECKOUT OPTIONS:
+  CombineX.Foundation:
+    :commit: 296e6feb867cae90f6dd08336899851bb85e7f88
+    :git: https://github.com/luoxiu/CombineX.Foundation.git
+  CombineX.swift:
+    :commit: b91697163c7483255d30a0cbbde64b591f28a011
+    :git: https://github.com/luoxiu/CombineX.git
 
 SPEC CHECKSUMS:
   CombineX.Cocoa: 44675a271e4304afba8d1c3d4253f82714fe9de0
-  CombineX.Foundation: 163b77f4d2c77b5fc68518eb395ac57b782289f1
+  CombineX.Foundation: c44a21188c0b23e136861ebfc88422070cbf9a83
   CombineX.swift: 7ec90db9f1b438e14db64f2291039a879e993e01
 
-PODFILE CHECKSUM: 8d6d961005afba00d05aeec6e801e6dc9be34e24
+PODFILE CHECKSUM: d1faebc8a27c7afac1f19152f54b22e5ce00c40c
 
 COCOAPODS: 1.7.3

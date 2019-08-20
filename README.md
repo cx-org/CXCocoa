@@ -23,7 +23,7 @@ It includes：
 - UIScheduler
 - ... 
 
-It's all based on [CombineX] (https://github.com/luoxiu/CombineX). **After the official release of Combine, you are free to switch the underlying support. **
+It's all based on [CombineX](https://github.com/luoxiu/CombineX). **After the official release of Combine, you are free to switch the underlying support. **
 
 
 ## Demo
@@ -72,7 +72,7 @@ keywordTextField.cx.text
 
 Combine is reactive framework published by Apple on WWDC 2019. It refers to the ReactiveX's interface design and provides an official implementation for Swift asynchronous programming. I believe it will become an important cornerstone of Swift programming in a few years. Unfortunately, it's closed source, with strict platform limits (Darwin only) and version restrictions (iOS 13+, macOS 10.15+).
 
-[CombineX] (https://github.com/luoxiu/CombineX) is an open source implementation of Combine. Its purpose is to implement an API that is fully consistent with Combine, allowing developers to get rid of the limitations of Combine, to write the same code on any platform (linux), any The version (iOS 10+, macOS 10.12+).
+[CombineX](https://github.com/luoxiu/CombineX) is an open source implementation of Combine. Its purpose is to implement an API that is fully consistent with Combine, allowing developers to get rid of the limitations of Combine, to write the same code on any platform (linux), any The version (iOS 10+, macOS 10.12+).
 
 Currently, CombineX has roughly implemented all of the Combine features.
 

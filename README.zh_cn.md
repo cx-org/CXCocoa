@@ -85,7 +85,7 @@ pod 'CombineX.swift', :git => 'https://github.com/luoxiu/CombineX.git', :branch 
 pod 'CombineX.Foundation', :git => 'https://github.com/luoxiu/CombineX.Foundation.git', :branch => 'master'
   
 
-pod 'CombineX.Cocoa', '~> 0.0.1-beta.3'
+pod 'CombineX.Cocoa', :git => 'https://github.com/luoxiu/CombineX.Cocoa.git', :branch => 'master'
 ```
 
 ## 贡献

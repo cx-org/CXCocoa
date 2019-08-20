@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
     s.name         = "CombineX.Cocoa"
     s.module_name  = "CombineXCocoa"
-    s.version      = "0.0.1-beta.3"
+    s.version      = "0.0.1-beta.1"
     s.summary      = "Cocoa extensions built on top of CombineX"
     s.homepage     = "https://github.com/luoxiu/CombineX.Cocoa"
     s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
     s.source = { :git => "https://github.com/luoxiu/CombineX.Cocoa.git", :tag => "#{s.version}" }
     s.source_files  = "Sources/**/*.{swift,h,m}"
 
-    s.dependency 'CombineX.Foundation', '~> 0.0.1-beta.3'
+    s.dependency 'CombineX.Foundation', '~> 0.0.1-beta.2'
   
 end

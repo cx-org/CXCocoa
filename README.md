@@ -1,20 +1,21 @@
 # CombineX.Cocoa
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/luoxiu/combinex.cocoa?include_prereleases)
 ![swift](https://img.shields.io/badge/swift-5.0-orange)
+![install](https://img.shields.io/badge/install-spm%20%7C%20cocoapods%20%7C%20carthage-ff69b4)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20watchos%20%7C%20tvos-lightgrey)
+![license](https://img.shields.io/github/license/luoxiu/combinex?color=black)
 
 ## Notice
 
-This library is still in beta testing, **Please do not use it in production!**
+This library is still in beta, so **do not use it in production!**
 
 🐱
 
 ## What is CombineX.Cocoa
 
-Like ReactiveCocoa and ReaciveSwift, RxCocoa and RxSwift, CombineX.Cocoa is a derivative of [CombineX.swift](https://github.com/luoxiu/CombineX). It provides [Combine](https://developer.apple.com/documentation/combine) extensions to Cocoa Framework, which allows you to write Cocoa-related asynchronous code in an elegant way that is compatible with Combine.
+Like ReactiveCocoa and ReaciveSwift, RxCocoa and RxSwift, CombineX.Cocoa is a derivative of [CombineX.swift](https://github.com/luoxiu/CombineX). It provides CombineX extensions to Cocoa Framework, which allows you to write Cocoa-related asynchronous code in an elegant way.
 
-It includes：
+It includes but is not limited to：
 
 - KVOPublisher, observing property changes through the KVO mechanism
 - MethodPublisher/DeallocatePublisher, tntercepting Method calls with Method Swizzle
@@ -29,8 +30,8 @@ It's all based on [CombineX](https://github.com/luoxiu/CombineX). **After the of
 ## Demo
 
 <p align="center">
-<img src="demo.1.gif">
-<img src="demo.2.gif">
+<img src="demo.1.gif" height="500">
+<img src="demo.2.gif" height="500">
 </p>
 
 ## Combine and CombineX

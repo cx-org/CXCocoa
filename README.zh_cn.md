@@ -1,10 +1,11 @@
 # CombineX.Cocoa
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/luoxiu/combinex.cocoa?include_prereleases)
 ![swift](https://img.shields.io/badge/swift-5.0-orange)
+![install](https://img.shields.io/badge/install-spm%20%7C%20cocoapods%20%7C%20carthage-ff69b4)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20watchos%20%7C%20tvos-lightgrey)
+![license](https://img.shields.io/github/license/luoxiu/combinex?color=black)
 
-## Notice
+## 注意
 
 本库仍在 beta 测试，所以，**还不可以把它用在生产项目中！**
 
@@ -12,9 +13,9 @@
 
 ## 什么是 CombineX.Cocoa
 
-与 ReactiveCocoa 和 ReaciveSwift, RxCocoa 和 RxSwift 的关系一样，CombineX.Cocoa 是 [CombineX.swift](https://github.com/luoxiu/CombineX) 的衍生库。它为 Cocoa Framework 框架提供了 [Combine](https://developer.apple.com/documentation/combine) 扩展，让你可以用 Combine 兼容的优雅语法书写 Cocoa 相关的异步代码。
+与 ReactiveCocoa 和 ReaciveSwift, RxCocoa 和 RxSwift 的关系一样，CombineX.Cocoa 是 [CombineX.swift](https://github.com/luoxiu/CombineX) 的衍生库。它为 Cocoa Framework 框架提供了 [Combine](https://developer.apple.com/documentation/combine) 扩展，让你可以用优雅的方式书写 Cocoa 相关的异步代码。
 
-它包括：
+它包括但不限于：
 
 - KVOPublisher，通过 KVO 机制观察属性变化
 - MethodPublisher/DeallocatePublisher，通过 Method Swizzle 拦截方法调用
@@ -25,47 +26,12 @@
 
 这一切都基于 [CombineX](https://github.com/luoxiu/CombineX) 实现。**在 Combine 正式发布后，你可以自由地切换底层支援。**
 
-## Demo
+## 实例
 
 <p align="center">
-<img src="demo.gif">
+<img src="demo.1.gif" height="500">
+<img src="demo.2.gif" height="500">
 </p>
-
-```swift
-let langPub = langSeg.cx.selectedSegmentIndex
-    .map {
-        ["swift", "javascript", "go"][$0]
-    }
-
-isOnSwitch.cx.isOn
-    .compactMap {
-        $0 ? nil : ""
-    }
-    .bind(to: self.logTextView.cx.text)
-    .cancel(by: self)
-
-keywordTextField.cx.text
-    .throttle(for: .seconds(0.1), scheduler: UIScheduler.shared, latest: true)
-    .combineLatest(langPub, isOnSwitch.cx.isOn)
-    .compactMap { (name, lang, isOn) -> URL? in
-        guard isOn else { return nil }
-        return name.flatMap {
-            $0.count > 3 ? URL(string: "https://api.github.com/search/repositories?q=\($0)+language:\(lang)") : nil
-        }
-    }
-    .removeDuplicates()
-    .mapError { $0 as Error }
-    .map {
-        return URLSession.shared.cx.dataTaskPublisher(for: $0).mapError { $0 as Error }
-    }
-    .switchToLatest()
-    .map {
-        processSearchResult($0.data)
-    }
-    .replaceError(with: "Bad response.")
-    .bind(to: self.logTextView.cx.text)
-    .cancel(by: self)
-```
 
 ## Combine 与 CombineX
 

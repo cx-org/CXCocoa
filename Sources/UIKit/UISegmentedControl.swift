@@ -11,14 +11,14 @@ extension CombineXBox where Base: UISegmentedControl {
         )
     }
     
-    public func titleForSegment(at index: Int) -> Binder<String?> {
-        return Binder(target: self.base) {
+    public func titleForSegment(at index: Int) -> UIBinder<String?> {
+        return UIBinder(target: self.base) {
             $0.setTitle($1, forSegmentAt: index)
         }
     }
     
-    public func imageForSegment(at index: Int) -> Binder<UIImage?> {
-        return Binder(target: self.base) {
+    public func imageForSegment(at index: Int) -> UIBinder<UIImage?> {
+        return UIBinder(target: self.base) {
             $0.setImage($1, forSegmentAt: index)
         }
     }

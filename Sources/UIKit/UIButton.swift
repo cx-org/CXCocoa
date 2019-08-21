@@ -7,23 +7,23 @@ extension CombineXBox where Base: UIButton {
         return self.controlEvent(.touchUpInside)
     }
     
-    public func title(for state: UIControl.State) -> Binder<String> {
-        return Binder(target: self.base) {
+    public func title(for state: UIControl.State) -> UIBinder<String> {
+        return UIBinder(target: self.base) {
             $0.setTitle($1, for: state)
         }
     }
     
-    public var title: Binder<String> {
+    public var title: UIBinder<String> {
         return self.title(for: .normal)
     }
     
-    public func image(for controlState: UIControl.State) -> Binder<UIImage?> {
-        return Binder(target: self.base) {
+    public func image(for controlState: UIControl.State) -> UIBinder<UIImage?> {
+        return UIBinder(target: self.base) {
             $0.setImage($1, for: controlState)
         }
     }
     
-    public var image: Binder<UIImage?> {
+    public var image: UIBinder<UIImage?> {
         return self.image(for: .normal)
     }
 }

@@ -33,10 +33,10 @@
 		669225852309A7A70078CE5E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225552309A7A60078CE5E /* Global.swift */; };
 		669225862309A7A70078CE5E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225552309A7A60078CE5E /* Global.swift */; };
 		669225872309A7A70078CE5E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225552309A7A60078CE5E /* Global.swift */; };
-		6692258C2309A7A70078CE5E /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* Binder.swift */; };
-		6692258D2309A7A70078CE5E /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* Binder.swift */; };
-		6692258E2309A7A70078CE5E /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* Binder.swift */; };
-		6692258F2309A7A70078CE5E /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* Binder.swift */; };
+		6692258C2309A7A70078CE5E /* AnyBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* AnyBinder.swift */; };
+		6692258D2309A7A70078CE5E /* AnyBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* AnyBinder.swift */; };
+		6692258E2309A7A70078CE5E /* AnyBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* AnyBinder.swift */; };
+		6692258F2309A7A70078CE5E /* AnyBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225572309A7A60078CE5E /* AnyBinder.swift */; };
 		669225902309A7A70078CE5E /* StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225592309A7A60078CE5E /* StaticString.swift */; };
 		669225912309A7A70078CE5E /* StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225592309A7A60078CE5E /* StaticString.swift */; };
 		669225922309A7A70078CE5E /* StaticString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669225592309A7A60078CE5E /* StaticString.swift */; };
@@ -105,6 +105,18 @@
 		669225DD2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692256F2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift */; };
 		669225DE2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692256F2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift */; };
 		669225DF2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692256F2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift */; };
+		66AD7E1F230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */; };
+		66AD7E20230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */; };
+		66AD7E21230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */; };
+		66AD7E22230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */; };
+		66AD7E24230D93F80071B6F2 /* UIBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E23230D93F80071B6F2 /* UIBinder.swift */; };
+		66AD7E25230D93F80071B6F2 /* UIBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E23230D93F80071B6F2 /* UIBinder.swift */; };
+		66AD7E26230D93F80071B6F2 /* UIBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E23230D93F80071B6F2 /* UIBinder.swift */; };
+		66AD7E27230D93F80071B6F2 /* UIBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E23230D93F80071B6F2 /* UIBinder.swift */; };
+		66AD7E29230D96F50071B6F2 /* NSObject+intercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */; };
+		66AD7E2A230D96F50071B6F2 /* NSObject+intercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */; };
+		66AD7E2B230D96F50071B6F2 /* NSObject+intercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */; };
+		66AD7E2C230D96F50071B6F2 /* NSObject+intercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */; };
 		66C29D20230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
 		66C29D21230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
 		66C29D22230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
@@ -145,7 +157,7 @@
 		669225512309A7A60078CE5E /* _cx_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _cx_objc.m; sourceTree = "<group>"; };
 		669225532309A7A60078CE5E /* UIScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScheduler.swift; sourceTree = "<group>"; };
 		669225552309A7A60078CE5E /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		669225572309A7A60078CE5E /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		669225572309A7A60078CE5E /* AnyBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyBinder.swift; sourceTree = "<group>"; };
 		669225592309A7A60078CE5E /* StaticString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticString.swift; sourceTree = "<group>"; };
 		6692255A2309A7A60078CE5E /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		6692255B2309A7A60078CE5E /* NSLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLock.swift; sourceTree = "<group>"; };
@@ -166,6 +178,9 @@
 		6692256C2309A7A70078CE5E /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		6692256D2309A7A70078CE5E /* UISegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISegmentedControl.swift; sourceTree = "<group>"; };
 		6692256F2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnyObject+DeallocatePublisher.swift"; sourceTree = "<group>"; };
+		66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderProtocol.swift; sourceTree = "<group>"; };
+		66AD7E23230D93F80071B6F2 /* UIBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBinder.swift; sourceTree = "<group>"; };
+		66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+intercept.swift"; sourceTree = "<group>"; };
 		66C29D1E230ACC7E00DE6A70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66C29D1F230AD0A600DE6A70 /* @_exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "@_exported.swift"; sourceTree = "<group>"; };
 		66C29D24230AD62F00DE6A70 /* TakeWhile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeWhile.swift; sourceTree = "<group>"; };
@@ -261,12 +276,14 @@
 			isa = PBXGroup;
 			children = (
 				66C29D1F230AD0A600DE6A70 /* @_exported.swift */,
+				669225572309A7A60078CE5E /* AnyBinder.swift */,
 				6692256F2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift */,
 				669225682309A7A60078CE5E /* AnyObject+KVOPublisher.swift */,
-				669225572309A7A60078CE5E /* Binder.swift */,
+				66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */,
 				6692254C2309A7A60078CE5E /* Cancellable.swift */,
 				6692255E2309A7A60078CE5E /* NSObject+MethodIntercept.swift */,
 				66C29D24230AD62F00DE6A70 /* TakeWhile.swift */,
+				66AD7E23230D93F80071B6F2 /* UIBinder.swift */,
 				669225532309A7A60078CE5E /* UIScheduler.swift */,
 				6692254D2309A7A60078CE5E /* _cx_objc */,
 				6668BED92309A23F006C61E6 /* conf */,
@@ -327,6 +344,7 @@
 				66C29D1E230ACC7E00DE6A70 /* README.md */,
 				669225652309A7A60078CE5E /* Selector+alias.swift */,
 				669225612309A7A60078CE5E /* sync.swift */,
+				66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */,
 			);
 			path = Objc;
 			sourceTree = "<group>";
@@ -334,12 +352,12 @@
 		669225692309A7A70078CE5E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				6692256A2309A7A70078CE5E /* UIControl+ControlEventPublisher.swift */,
 				6692256B2309A7A70078CE5E /* UIButton.swift */,
-				6692256C2309A7A70078CE5E /* UILabel.swift */,
-				6692256D2309A7A70078CE5E /* UISegmentedControl.swift */,
+				6692256A2309A7A70078CE5E /* UIControl+ControlEventPublisher.swift */,
 				66C29D29230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift */,
 				66C29D2E230AF22B00DE6A70 /* UIDatePicker.swift */,
+				6692256C2309A7A70078CE5E /* UILabel.swift */,
+				6692256D2309A7A70078CE5E /* UISegmentedControl.swift */,
 				66C29D30230AF2C300DE6A70 /* UISwitch.swift */,
 				66C29D32230AF30400DE6A70 /* UITextField.swift */,
 				664ED8D4230C2C8300287D68 /* UITextView.swift */,
@@ -678,7 +696,7 @@
 				669225C42309A7A70078CE5E /* Objc+Const.swift in Sources */,
 				66C29D20230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				6692259C2309A7A70078CE5E /* Atom.swift in Sources */,
-				6692258C2309A7A70078CE5E /* Binder.swift in Sources */,
+				6692258C2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225C82309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
 				669225C02309A7A70078CE5E /* associate.swift in Sources */,
 				664ED8D5230C2C8300287D68 /* UITextView.swift in Sources */,
@@ -689,7 +707,9 @@
 				669225A82309A7A70078CE5E /* Objc.swift in Sources */,
 				669225A02309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
 				669225BC2309A7A70078CE5E /* Selector+alias.swift in Sources */,
+				66AD7E24230D93F80071B6F2 /* UIBinder.swift in Sources */,
 				66C29D33230AF30500DE6A70 /* UITextField.swift in Sources */,
+				66AD7E1F230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */,
 				6692257C2309A7A70078CE5E /* _cx_objc.m in Sources */,
 				669225D02309A7A70078CE5E /* UIButton.swift in Sources */,
 				669225802309A7A70078CE5E /* UIScheduler.swift in Sources */,
@@ -702,6 +722,7 @@
 				669225CC2309A7A70078CE5E /* UIControl+ControlEventPublisher.swift in Sources */,
 				669225982309A7A70078CE5E /* NSLock.swift in Sources */,
 				669225D42309A7A70078CE5E /* UILabel.swift in Sources */,
+				66AD7E29230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D2A230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift in Sources */,
 				669225A42309A7A70078CE5E /* DelegateProxy.swift in Sources */,
 			);
@@ -711,12 +732,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AD7E2A230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D26230AD62F00DE6A70 /* TakeWhile.swift in Sources */,
 				669225912309A7A70078CE5E /* StaticString.swift in Sources */,
 				669225B12309A7A70078CE5E /* NSObject+class.swift in Sources */,
 				669225C52309A7A70078CE5E /* Objc+Const.swift in Sources */,
 				6692259D2309A7A70078CE5E /* Atom.swift in Sources */,
-				6692258D2309A7A70078CE5E /* Binder.swift in Sources */,
+				6692258D2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225C92309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
 				66C29D21230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				669225C12309A7A70078CE5E /* associate.swift in Sources */,
@@ -724,6 +746,7 @@
 				669225B52309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,
 				669225852309A7A70078CE5E /* Global.swift in Sources */,
 				669225A92309A7A70078CE5E /* Objc.swift in Sources */,
+				66AD7E25230D93F80071B6F2 /* UIBinder.swift in Sources */,
 				669225A12309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
 				669225BD2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				6692257D2309A7A70078CE5E /* _cx_objc.m in Sources */,
@@ -732,6 +755,7 @@
 				669225AD2309A7A70078CE5E /* sync.swift in Sources */,
 				669225712309A7A70078CE5E /* Cancellable.swift in Sources */,
 				669225B92309A7A70078CE5E /* NSObject+swizzle.swift in Sources */,
+				66AD7E20230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */,
 				669225992309A7A70078CE5E /* NSLock.swift in Sources */,
 				669225A52309A7A70078CE5E /* DelegateProxy.swift in Sources */,
 			);
@@ -741,12 +765,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AD7E2B230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D27230AD62F00DE6A70 /* TakeWhile.swift in Sources */,
 				669225922309A7A70078CE5E /* StaticString.swift in Sources */,
 				669225B22309A7A70078CE5E /* NSObject+class.swift in Sources */,
 				669225C62309A7A70078CE5E /* Objc+Const.swift in Sources */,
 				6692259E2309A7A70078CE5E /* Atom.swift in Sources */,
-				6692258E2309A7A70078CE5E /* Binder.swift in Sources */,
+				6692258E2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225CA2309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
 				66C29D22230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				669225C22309A7A70078CE5E /* associate.swift in Sources */,
@@ -754,6 +779,7 @@
 				669225B62309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,
 				669225862309A7A70078CE5E /* Global.swift in Sources */,
 				669225AA2309A7A70078CE5E /* Objc.swift in Sources */,
+				66AD7E26230D93F80071B6F2 /* UIBinder.swift in Sources */,
 				669225A22309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
 				669225BE2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				6692257E2309A7A70078CE5E /* _cx_objc.m in Sources */,
@@ -762,6 +788,7 @@
 				669225AE2309A7A70078CE5E /* sync.swift in Sources */,
 				669225722309A7A70078CE5E /* Cancellable.swift in Sources */,
 				669225BA2309A7A70078CE5E /* NSObject+swizzle.swift in Sources */,
+				66AD7E21230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */,
 				6692259A2309A7A70078CE5E /* NSLock.swift in Sources */,
 				669225A62309A7A70078CE5E /* DelegateProxy.swift in Sources */,
 			);
@@ -771,12 +798,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AD7E2C230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D28230AD62F00DE6A70 /* TakeWhile.swift in Sources */,
 				669225932309A7A70078CE5E /* StaticString.swift in Sources */,
 				669225B32309A7A70078CE5E /* NSObject+class.swift in Sources */,
 				669225C72309A7A70078CE5E /* Objc+Const.swift in Sources */,
 				6692259F2309A7A70078CE5E /* Atom.swift in Sources */,
-				6692258F2309A7A70078CE5E /* Binder.swift in Sources */,
+				6692258F2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225CB2309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
 				66C29D23230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				669225C32309A7A70078CE5E /* associate.swift in Sources */,
@@ -784,6 +812,7 @@
 				669225B72309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,
 				669225872309A7A70078CE5E /* Global.swift in Sources */,
 				669225AB2309A7A70078CE5E /* Objc.swift in Sources */,
+				66AD7E27230D93F80071B6F2 /* UIBinder.swift in Sources */,
 				669225A32309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
 				669225BF2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				6692257F2309A7A70078CE5E /* _cx_objc.m in Sources */,
@@ -792,6 +821,7 @@
 				669225AF2309A7A70078CE5E /* sync.swift in Sources */,
 				669225732309A7A70078CE5E /* Cancellable.swift in Sources */,
 				669225BB2309A7A70078CE5E /* NSObject+swizzle.swift in Sources */,
+				66AD7E22230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */,
 				6692259B2309A7A70078CE5E /* NSLock.swift in Sources */,
 				669225A72309A7A70078CE5E /* DelegateProxy.swift in Sources */,
 			);

@@ -6,36 +6,36 @@ extension CombineXBox where Base: UIControl {
     public func controlEvent(_ events: UIControl.Event) -> ControlEventPublisher<Base> {
         return .init(control: self.base, events: events)
     }
+}
+
+public struct ControlEventPublisher<Control: UIControl>: Publisher {
     
-    public struct ControlEventPublisher<Control: UIControl>: Publisher {
+    public typealias Output = Control
+    
+    public typealias Failure = Never
+    
+    public let control: Control
+    
+    public let events: UIControl.Event
+    
+    public init(control: Control, events: UIControl.Event) {
+        self.control = control
+        self.events = events
+    }
+    
+    public func receive<S>(subscriber: S) where S : Subscriber, Failure == S.Failure, Output == S.Input {
         
-        public typealias Output = Control
+        let subject = PassthroughSubject<Output, Failure>()
         
-        public typealias Failure = Never
-        
-        public let control: Control
-        
-        public let events: UIControl.Event
-        
-        public init(control: Control, events: UIControl.Event) {
-            self.control = control
-            self.events = events
+        let target = UIControlTarget(control: self.control, events: self.events) {
+            subject.send($0)
         }
         
-        public func receive<S>(subscriber: S) where S : Subscriber, Failure == S.Failure, Output == S.Input {
-            
-            let subject = PassthroughSubject<Output, Failure>()
-            
-            let target = UIControlTarget(control: self.control, events: self.events) {
-                subject.send($0)
-            }
-            
-            subject
-                .handleEvents(receiveCancel: {
-                    target.cancel()
-                })
-                .receive(subscriber: subscriber)
-        }
+        subject
+            .handleEvents(receiveCancel: {
+                target.cancel()
+            })
+            .receive(subscriber: subscriber)
     }
 }
 

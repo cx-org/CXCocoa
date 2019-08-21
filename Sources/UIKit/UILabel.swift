@@ -3,20 +3,20 @@ import CombineXFoundation
 
 extension CombineXBox where Base: UILabel {
     
-    public var text: Binder<String?> {
-        return Binder(target: self.base) {
+    public var text: UIBinder<String?> {
+        return UIBinder(target: self.base) {
             $0.text = $1
         }
     }
     
-    public var attributedText: Binder<NSAttributedString?> {
-        return Binder(target: self.base) {
+    public var attributedText: UIBinder<NSAttributedString?> {
+        return UIBinder(target: self.base) {
             $0.attributedText = $1
         }
     }
     
-    public var textColor: Binder<UIColor> {
-        return Binder(target: self.base) {
+    public var textColor: UIBinder<UIColor> {
+        return UIBinder(target: self.base) {
             $0.textColor = $1
         }
     }

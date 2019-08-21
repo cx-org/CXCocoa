@@ -24,7 +24,7 @@ It includes but is not limited to：
 - UIScheduler
 - ... 
 
-It's all based on [CombineX](https://github.com/luoxiu/CombineX). **After the official release of Combine, you are free to switch the underlying support. **
+It's all based on [CombineX](https://github.com/luoxiu/CombineX). **After the official release of Combine, you are free to switch the underlying support.**
 
 
 ## Demo
@@ -66,3 +66,7 @@ You can:
 3. Make your suggestions(new feature, improvement, bug...)
 
 **Because the upstream CombineX is still in beta, if you encounter a strange problem in this library - then it may drift from upstream. 🤣**
+
+## Acknowledgement
+
+The implementation of the library references both reactivecocoa and rxswift, especially ReactiveCocoa, The ObjC part completely modified from its source code. Great thanks to their work!

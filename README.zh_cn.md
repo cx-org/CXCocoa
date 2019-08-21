@@ -65,3 +65,7 @@ pod 'CombineX.Cocoa', :git => 'https://github.com/luoxiu/CombineX.Cocoa.git', :b
 3. 提出你对本项目的建议
 
 **因为上游 CombineX 还在测试阶段，如果你在本库遇到了奇怪的问题——那么它有可能是上游漂流下来的问题。🤣**
+
+## 致谢
+
+该库的实现同时参考了 ReactiveCocoa 和 RxSwift，尤其是 ReactiveCocoa，ObjC 部分完全修改自它的源码。为它们的工作表示感谢！

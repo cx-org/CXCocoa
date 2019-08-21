@@ -29,44 +29,9 @@ It's all based on [CombineX](https://github.com/luoxiu/CombineX). **After the of
 ## Demo
 
 <p align="center">
-<img src="demo.gif">
+<img src="demo.1.gif">
+<img src="demo.2.gif">
 </p>
-
-```swift
-let langPub = langSeg.cx.selectedSegmentIndex
-    .map {
-        ["swift", "javascript", "go"][$0]
-    }
-
-isOnSwitch.cx.isOn
-    .compactMap {
-        $0 ? nil : ""
-    }
-    .bind(to: self.logTextView.cx.text)
-    .cancel(by: self)
-
-keywordTextField.cx.text
-    .throttle(for: .seconds(0.1), scheduler: UIScheduler.shared, latest: true)
-    .combineLatest(langPub, isOnSwitch.cx.isOn)
-    .compactMap { (name, lang, isOn) -> URL? in
-        guard isOn else { return nil }
-        return name.flatMap {
-            $0.count > 3 ? URL(string: "https://api.github.com/search/repositories?q=\($0)+language:\(lang)") : nil
-        }
-    }
-    .removeDuplicates()
-    .mapError { $0 as Error }
-    .map {
-        return URLSession.shared.cx.dataTaskPublisher(for: $0).mapError { $0 as Error }
-    }
-    .switchToLatest()
-    .map {
-        processSearchResult($0.data)
-    }
-    .replaceError(with: "Bad response.")
-    .bind(to: self.logTextView.cx.text)
-    .cancel(by: self)
-```
 
 ## Combine and CombineX
 

@@ -1,7 +1,7 @@
 {
   "name": "CombineX.Cocoa",
   "module_name": "CombineXCocoa",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.1",
   "summary": "Cocoa extensions built on top of CombineX",
   "homepage": "https://github.com/luoxiu/CombineX.Cocoa",
   "license": {
@@ -22,7 +22,7 @@
   },
   "source": {
     "git": "https://github.com/luoxiu/CombineX.Cocoa.git",
-    "tag": "0.0.1-beta.2"
+    "tag": "0.0.1-beta.1"
   },
   "source_files": "Sources/**/*.{swift,h,m}",
   "dependencies": {

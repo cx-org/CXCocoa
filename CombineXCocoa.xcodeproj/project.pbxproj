@@ -53,10 +53,10 @@
 		6692259D2309A7A70078CE5E /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255C2309A7A60078CE5E /* Atom.swift */; };
 		6692259E2309A7A70078CE5E /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255C2309A7A60078CE5E /* Atom.swift */; };
 		6692259F2309A7A70078CE5E /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255C2309A7A60078CE5E /* Atom.swift */; };
-		669225A02309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodIntercept.swift */; };
-		669225A12309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodIntercept.swift */; };
-		669225A22309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodIntercept.swift */; };
-		669225A32309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodIntercept.swift */; };
+		669225A02309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodInvocation.swift */; };
+		669225A12309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodInvocation.swift */; };
+		669225A22309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodInvocation.swift */; };
+		669225A32309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255E2309A7A60078CE5E /* NSObject+MethodInvocation.swift */; };
 		669225A42309A7A70078CE5E /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255F2309A7A60078CE5E /* DelegateProxy.swift */; };
 		669225A52309A7A70078CE5E /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255F2309A7A60078CE5E /* DelegateProxy.swift */; };
 		669225A62309A7A70078CE5E /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692255F2309A7A60078CE5E /* DelegateProxy.swift */; };
@@ -117,6 +117,10 @@
 		66AD7E2A230D96F50071B6F2 /* NSObject+intercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */; };
 		66AD7E2B230D96F50071B6F2 /* NSObject+intercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */; };
 		66AD7E2C230D96F50071B6F2 /* NSObject+intercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */; };
+		66AD7E30230D9AED0071B6F2 /* UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E2F230D9AED0071B6F2 /* UIProgressView.swift */; };
+		66AD7E33230D9B460071B6F2 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E32230D9B460071B6F2 /* UIActivityIndicatorView.swift */; };
+		66AD7E35230D9B8B0071B6F2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E34230D9B8B0071B6F2 /* UIViewController.swift */; };
+		66AD7E37230D9DAE0071B6F2 /* UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E36230D9DAE0071B6F2 /* UITabBarItem.swift */; };
 		66C29D20230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
 		66C29D21230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
 		66C29D22230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
@@ -162,7 +166,7 @@
 		6692255A2309A7A60078CE5E /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		6692255B2309A7A60078CE5E /* NSLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLock.swift; sourceTree = "<group>"; };
 		6692255C2309A7A60078CE5E /* Atom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
-		6692255E2309A7A60078CE5E /* NSObject+MethodIntercept.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MethodIntercept.swift"; sourceTree = "<group>"; };
+		6692255E2309A7A60078CE5E /* NSObject+MethodInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+MethodInvocation.swift"; sourceTree = "<group>"; };
 		6692255F2309A7A60078CE5E /* DelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateProxy.swift; sourceTree = "<group>"; };
 		669225602309A7A60078CE5E /* Objc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objc.swift; sourceTree = "<group>"; };
 		669225612309A7A60078CE5E /* sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sync.swift; sourceTree = "<group>"; };
@@ -181,6 +185,10 @@
 		66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderProtocol.swift; sourceTree = "<group>"; };
 		66AD7E23230D93F80071B6F2 /* UIBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBinder.swift; sourceTree = "<group>"; };
 		66AD7E28230D96F50071B6F2 /* NSObject+intercept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+intercept.swift"; sourceTree = "<group>"; };
+		66AD7E2F230D9AED0071B6F2 /* UIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressView.swift; sourceTree = "<group>"; };
+		66AD7E32230D9B460071B6F2 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
+		66AD7E34230D9B8B0071B6F2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		66AD7E36230D9DAE0071B6F2 /* UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItem.swift; sourceTree = "<group>"; };
 		66C29D1E230ACC7E00DE6A70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66C29D1F230AD0A600DE6A70 /* @_exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "@_exported.swift"; sourceTree = "<group>"; };
 		66C29D24230AD62F00DE6A70 /* TakeWhile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeWhile.swift; sourceTree = "<group>"; };
@@ -281,7 +289,7 @@
 				669225682309A7A60078CE5E /* AnyObject+KVOPublisher.swift */,
 				66AD7E1E230D8B4E0071B6F2 /* BinderProtocol.swift */,
 				6692254C2309A7A60078CE5E /* Cancellable.swift */,
-				6692255E2309A7A60078CE5E /* NSObject+MethodIntercept.swift */,
+				6692255E2309A7A60078CE5E /* NSObject+MethodInvocation.swift */,
 				66C29D24230AD62F00DE6A70 /* TakeWhile.swift */,
 				66AD7E23230D93F80071B6F2 /* UIBinder.swift */,
 				669225532309A7A60078CE5E /* UIScheduler.swift */,
@@ -361,6 +369,10 @@
 				66C29D30230AF2C300DE6A70 /* UISwitch.swift */,
 				66C29D32230AF30400DE6A70 /* UITextField.swift */,
 				664ED8D4230C2C8300287D68 /* UITextView.swift */,
+				66AD7E2F230D9AED0071B6F2 /* UIProgressView.swift */,
+				66AD7E32230D9B460071B6F2 /* UIActivityIndicatorView.swift */,
+				66AD7E34230D9B8B0071B6F2 /* UIViewController.swift */,
+				66AD7E36230D9DAE0071B6F2 /* UITabBarItem.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -699,23 +711,27 @@
 				6692258C2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225C82309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
 				669225C02309A7A70078CE5E /* associate.swift in Sources */,
+				66AD7E30230D9AED0071B6F2 /* UIProgressView.swift in Sources */,
 				664ED8D5230C2C8300287D68 /* UITextView.swift in Sources */,
 				669225942309A7A70078CE5E /* DispatchQueue.swift in Sources */,
 				66C29D2F230AF22B00DE6A70 /* UIDatePicker.swift in Sources */,
 				669225B42309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,
 				669225842309A7A70078CE5E /* Global.swift in Sources */,
 				669225A82309A7A70078CE5E /* Objc.swift in Sources */,
-				669225A02309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
+				669225A02309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */,
 				669225BC2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				66AD7E24230D93F80071B6F2 /* UIBinder.swift in Sources */,
 				66C29D33230AF30500DE6A70 /* UITextField.swift in Sources */,
 				66AD7E1F230D8B4E0071B6F2 /* BinderProtocol.swift in Sources */,
+				66AD7E33230D9B460071B6F2 /* UIActivityIndicatorView.swift in Sources */,
+				66AD7E35230D9B8B0071B6F2 /* UIViewController.swift in Sources */,
 				6692257C2309A7A70078CE5E /* _cx_objc.m in Sources */,
 				669225D02309A7A70078CE5E /* UIButton.swift in Sources */,
 				669225802309A7A70078CE5E /* UIScheduler.swift in Sources */,
 				669225DC2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift in Sources */,
 				66C29D25230AD62F00DE6A70 /* TakeWhile.swift in Sources */,
 				66C29D31230AF2C300DE6A70 /* UISwitch.swift in Sources */,
+				66AD7E37230D9DAE0071B6F2 /* UITabBarItem.swift in Sources */,
 				669225AC2309A7A70078CE5E /* sync.swift in Sources */,
 				669225702309A7A70078CE5E /* Cancellable.swift in Sources */,
 				669225B82309A7A70078CE5E /* NSObject+swizzle.swift in Sources */,
@@ -747,7 +763,7 @@
 				669225852309A7A70078CE5E /* Global.swift in Sources */,
 				669225A92309A7A70078CE5E /* Objc.swift in Sources */,
 				66AD7E25230D93F80071B6F2 /* UIBinder.swift in Sources */,
-				669225A12309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
+				669225A12309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */,
 				669225BD2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				6692257D2309A7A70078CE5E /* _cx_objc.m in Sources */,
 				669225812309A7A70078CE5E /* UIScheduler.swift in Sources */,
@@ -780,7 +796,7 @@
 				669225862309A7A70078CE5E /* Global.swift in Sources */,
 				669225AA2309A7A70078CE5E /* Objc.swift in Sources */,
 				66AD7E26230D93F80071B6F2 /* UIBinder.swift in Sources */,
-				669225A22309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
+				669225A22309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */,
 				669225BE2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				6692257E2309A7A70078CE5E /* _cx_objc.m in Sources */,
 				669225822309A7A70078CE5E /* UIScheduler.swift in Sources */,
@@ -813,7 +829,7 @@
 				669225872309A7A70078CE5E /* Global.swift in Sources */,
 				669225AB2309A7A70078CE5E /* Objc.swift in Sources */,
 				66AD7E27230D93F80071B6F2 /* UIBinder.swift in Sources */,
-				669225A32309A7A70078CE5E /* NSObject+MethodIntercept.swift in Sources */,
+				669225A32309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */,
 				669225BF2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				6692257F2309A7A70078CE5E /* _cx_objc.m in Sources */,
 				669225832309A7A70078CE5E /* UIScheduler.swift in Sources */,

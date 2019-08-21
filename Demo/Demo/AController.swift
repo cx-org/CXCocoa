@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AController.swift
 //  Demo
 //
 //  Created by Quentin Jin on 2019/8/14.
@@ -9,7 +9,7 @@
 import UIKit
 import CombineXCocoa
 
-class ViewController: UIViewController {
+class AController: UIViewController {
 
     @IBOutlet weak var langSeg: UISegmentedControl!
     @IBOutlet weak var isOnSwitch: UISwitch!

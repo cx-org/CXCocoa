@@ -1,5 +1,5 @@
 PODS:
-  - CombineX.Cocoa (0.0.1-beta.2):
+  - CombineX.Cocoa (0.0.1-beta.1):
     - CombineX.Foundation (~> 0.0.1-beta.2)
   - CombineX.Foundation (0.0.1-beta.2):
     - CombineX.swift (~> 0.0.1-beta.2)
@@ -29,7 +29,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/luoxiu/CombineX.git
 
 SPEC CHECKSUMS:
-  CombineX.Cocoa: 44675a271e4304afba8d1c3d4253f82714fe9de0
+  CombineX.Cocoa: b84cae6b300a4df66192920f77ffec740d80a85f
   CombineX.Foundation: c44a21188c0b23e136861ebfc88422070cbf9a83
   CombineX.swift: 7ec90db9f1b438e14db64f2291039a879e993e01
 

@@ -13,18 +13,18 @@
 
 ## 什么是 CombineX.Cocoa
 
-与 ReactiveCocoa 和 ReaciveSwift, RxCocoa 和 RxSwift 的关系一样，CombineX.Cocoa 是 [CombineX.swift](https://github.com/luoxiu/CombineX) 的衍生库。它为 Cocoa Framework 框架提供了 [Combine](https://developer.apple.com/documentation/combine) 扩展，让你可以用优雅的方式书写 Cocoa 相关的异步代码。
+与 ReactiveCocoa 和 ReaciveSwift, RxCocoa 和 RxSwift 的关系一样，CombineX.Cocoa 是 [CombineX.swift](https://github.com/luoxiu/CombineX) 的衍生库。它为 Cocoa Framework 框架提供了 [Combine](https://developer.apple.com/documentation/combine) 扩展，让你可以更优雅书写 Cocoa 相关的异步代码。
 
 它包括但不限于：
 
+- MethodPublisher/DeallocatePublisher，通过 Runtime 拦截方法调用
 - KVOPublisher，通过 KVO 机制观察属性变化
-- MethodPublisher/DeallocatePublisher，通过 Method Swizzle 拦截方法调用
+- DelegateProxy，通过 Runtime 转发代理消息
 - UIKit binder&property，订阅控件事件，绑定值
-- Delegate proxy
 - UIScheduler
-- ... 
+- ...
 
-这一切都基于 [CombineX](https://github.com/luoxiu/CombineX) 实现。**在 Combine 正式发布后，你可以自由地切换底层支援。**
+这一切都基于 [CombineX](https://github.com/luoxiu/CombineX) 实现。**但是，在 Combine 正式发布后，你可以自由地切换底层支援。**
 
 ## 实例
 

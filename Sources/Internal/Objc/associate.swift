@@ -22,7 +22,8 @@ struct AssociateKey<T> {
 extension CombineXBox where Base: AnyObject {
     
     func getAssociated<T>(for key: AssociateKey<T>) -> T? {
-        return objc_getAssociatedObject(self.base, key.key) as? T
+        // avoid NSNull
+        return objc_getAssociatedObject(self.base, key.key) as! T?
     }
     
     func setAssociated<T>(_ val: T?, for key: AssociateKey<T>) {

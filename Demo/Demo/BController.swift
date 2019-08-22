@@ -17,12 +17,17 @@ class BController: UIViewController {
     @IBOutlet weak var colorSegControl: UISegmentedControl!
     @IBOutlet weak var logTextView: UITextView!
     
+    @IBOutlet weak var pickerView: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        pickerView.dataSource = self
+        pickerView.delegate = self
         
         func log(_ text: String) {
             self.logTextView.text.append(text + "\n")
+            self.logTextView.scrollsToBottom()
         }
 
         self.activityButton.cx.tap
@@ -56,10 +61,41 @@ class BController: UIViewController {
                 let color = ["Red", "Green", "Blue"][idx]
                 log("[Segmented]: \(color)")
             })
-            .map {
-                $0.1
-            }
-            .bind(to: self.tabBarItem.cx.badgeColor)
+            .bindTo(self.pickerView.cx.selectedRow(inComponent: 0), self.tabBarItem.cx.badgeColor)
             .cancel(by: self)
+        
+        self.pickerView.cx.didSelect
+            .map {
+                ($0.row, [UIColor.red, UIColor.green, UIColor.blue][$0.row])
+            }
+            .handleEvents(receiveOutput: { (idx, _) in
+                let color = ["Red", "Green", "Blue"][idx]
+                log("[Segmented]: \(color)")
+            })
+            .bindTo(self.colorSegControl.cx.selectedSegmentIndex, self.tabBarItem.cx.badgeColor)
+            .cancel(by: self)
+    }
+}
+
+extension BController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 3
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return ["RED", "GREEN", "BLUE"][row]
+    }
+}
+
+extension UITextView {
+    
+    func scrollsToBottom() {
+        guard let text = self.text else { return }
+        self.scrollRangeToVisible(NSRange(location: text.count - 1, length: 1))
     }
 }

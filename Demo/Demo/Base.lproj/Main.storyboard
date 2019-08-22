@@ -91,7 +91,7 @@
                                 </date>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="37q-3C-P18">
-                                <rect key="frame" x="20" y="398" width="374" height="395"/>
+                                <rect key="frame" x="20" y="634" width="374" height="159"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -107,15 +107,20 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vDl-kh-7ca">
                                 <rect key="frame" x="334" y="69" width="20" height="20"/>
                             </activityIndicatorView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYK-Fp-n8E">
+                                <rect key="frame" x="20" y="398" width="374" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Hoj-z7-UUD" firstAttribute="leading" secondItem="YLD-RI-rgM" secondAttribute="leading" id="1gU-RV-Td0"/>
+                            <constraint firstItem="fYK-Fp-n8E" firstAttribute="leading" secondItem="YLD-RI-rgM" secondAttribute="leading" constant="20" id="7Zs-3B-Ekm"/>
                             <constraint firstItem="YLD-RI-rgM" firstAttribute="trailing" secondItem="37q-3C-P18" secondAttribute="trailing" constant="20" id="9cs-k4-G5Y"/>
+                            <constraint firstItem="YLD-RI-rgM" firstAttribute="trailing" secondItem="fYK-Fp-n8E" secondAttribute="trailing" constant="20" id="HUA-zt-6js"/>
                             <constraint firstItem="SeW-qJ-XsE" firstAttribute="leading" secondItem="YLD-RI-rgM" secondAttribute="leading" constant="20" id="HYV-Hc-Apm"/>
                             <constraint firstItem="YLD-RI-rgM" firstAttribute="trailing" secondItem="SeW-qJ-XsE" secondAttribute="trailing" constant="100" id="PJ5-0x-4QX"/>
                             <constraint firstItem="vDl-kh-7ca" firstAttribute="centerY" secondItem="SeW-qJ-XsE" secondAttribute="centerY" id="Sgw-YF-zmK"/>
-                            <constraint firstItem="37q-3C-P18" firstAttribute="top" secondItem="d3h-ah-ONi" secondAttribute="bottom" constant="20" id="Vim-dQ-yI0"/>
+                            <constraint firstItem="fYK-Fp-n8E" firstAttribute="top" secondItem="d3h-ah-ONi" secondAttribute="bottom" constant="20" id="bTW-eM-LUu"/>
                             <constraint firstItem="SeW-qJ-XsE" firstAttribute="top" secondItem="YLD-RI-rgM" secondAttribute="top" constant="20" id="frQ-ex-S8h"/>
                             <constraint firstItem="YLD-RI-rgM" firstAttribute="bottom" secondItem="37q-3C-P18" secondAttribute="bottom" constant="20" id="gKo-dd-Bur"/>
                             <constraint firstItem="d3h-ah-ONi" firstAttribute="leading" secondItem="YLD-RI-rgM" secondAttribute="leading" constant="20" id="mxz-Bu-kqg"/>
@@ -123,6 +128,7 @@
                             <constraint firstItem="Hoj-z7-UUD" firstAttribute="trailing" secondItem="YLD-RI-rgM" secondAttribute="trailing" id="nFp-KI-QSG"/>
                             <constraint firstItem="Hoj-z7-UUD" firstAttribute="top" secondItem="SeW-qJ-XsE" secondAttribute="bottom" constant="20" id="nUq-cg-1tu"/>
                             <constraint firstItem="YLD-RI-rgM" firstAttribute="trailing" secondItem="d3h-ah-ONi" secondAttribute="trailing" constant="20" id="plu-3j-Ucw"/>
+                            <constraint firstItem="37q-3C-P18" firstAttribute="top" secondItem="fYK-Fp-n8E" secondAttribute="bottom" constant="20" id="uOD-Bg-fpu"/>
                             <constraint firstItem="vDl-kh-7ca" firstAttribute="leading" secondItem="SeW-qJ-XsE" secondAttribute="trailing" constant="20" id="w8g-g8-RCy"/>
                             <constraint firstItem="d3h-ah-ONi" firstAttribute="top" secondItem="Hoj-z7-UUD" secondAttribute="bottom" constant="20" id="xip-AY-90Q"/>
                         </constraints>
@@ -135,6 +141,7 @@
                         <outlet property="colorSegControl" destination="d3h-ah-ONi" id="jNA-gl-BlQ"/>
                         <outlet property="datePicker" destination="Hoj-z7-UUD" id="2ZH-GK-Z9h"/>
                         <outlet property="logTextView" destination="37q-3C-P18" id="hrP-As-Yvy"/>
+                        <outlet property="pickerView" destination="fYK-Fp-n8E" id="3Xo-U5-APv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jap-Jc-qJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,6 +154,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RBX-mF-j4B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jHM-4M-iQI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

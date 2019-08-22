@@ -70,7 +70,7 @@ class BController: UIViewController {
             }
             .handleEvents(receiveOutput: { (idx, _) in
                 let color = ["Red", "Green", "Blue"][idx]
-                log("[Segmented]: \(color)")
+                log("[PickerView]: \(color)")
             })
             .bindTo(self.colorSegControl.cx.selectedSegmentIndex, self.tabBarItem.cx.badgeColor)
             .cancel(by: self)

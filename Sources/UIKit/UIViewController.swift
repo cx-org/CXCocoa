@@ -1,6 +1,4 @@
 import UIKit
-import CombineXFoundation
-
 extension CombineXBox where Base: UIViewController {
     
     public var title: UIBinder<String?> {

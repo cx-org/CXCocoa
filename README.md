@@ -1,9 +1,9 @@
 # CombineX.Cocoa([中文](README.zh_cn.md))
 
 ![swift](https://img.shields.io/badge/swift-5.0-orange)
-![install](https://img.shields.io/badge/install-spm%20%7C%20cocoapods%20%7C%20carthage-ff69b4)
+![install](https://img.shields.io/badge/install-cocoapods%20%7C%20carthage-ff69b4)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20watchos%20%7C%20tvos-lightgrey)
-![license](https://img.shields.io/github/license/luoxiu/combinex?color=black)
+![license](https://img.shields.io/github/license/cx-org/CXCocoa?color=black)
 
 ## Notice
 
@@ -13,7 +13,7 @@ This library is still in beta, so **do not use it in production!**
 
 ## What is CombineX.Cocoa
 
-Like ReactiveCocoa and ReaciveSwift, RxCocoa and RxSwift, CombineX.Cocoa is a derivative of [CombineX](https://github.com/luoxiu/CombineX). It provides [Combine](https://developer.apple.com/documentation/combine) extensions to Cocoa Framework, which allows you to write Cocoa-related asynchronous code in an elegant way.
+Like ReactiveCocoa and ReaciveSwift, RxCocoa and RxSwift, CXCocoa is a derivative of [CombineX](https://github.com/cx-org/CombineX). It provides [Combine](https://developer.apple.com/documentation/combine) extensions to Cocoa Framework, which allows you to write Cocoa-related asynchronous code in an elegant way.
 
 It includes but is not limited to：
 
@@ -24,7 +24,7 @@ It includes but is not limited to：
 - UIScheduler
 - ...
 
-It's all based on [CombineX](https://github.com/luoxiu/CombineX). **After the official release of Combine, you are free to switch the underlying support.**
+It's all based on [CombineX](https://github.com/cx-org/CombineX). **After the official release of Combine, you are free to switch the underlying support.**
 
 ## Demo
 
@@ -39,20 +39,20 @@ It's all based on [CombineX](https://github.com/luoxiu/CombineX). **After the of
 
 ```ruby
 # forcing master branches for now.
-pod 'CombineX.swift', :git => 'https://github.com/luoxiu/CombineX.git', :branch => 'master'
-pod 'CombineX.Foundation', :git => 'https://github.com/luoxiu/CombineX.Foundation.git', :branch => 'master'
+pod 'CombineX', :git => 'https://github.com/cx-org/CombineX.git', :branch => 'master'
+pod 'CXFoundation', :git => 'https://github.com/cx-org/CXFoundation.git', :branch => 'master'
   
 
-pod 'CombineX.Cocoa', :git => 'https://github.com/luoxiu/CombineX.Cocoa.git', :branch => 'master'
+pod 'CXCocoa', :git => 'https://github.com/cx-org/CXCocoa.git', :branch => 'master'
 ```
 
 ### Carthage
 
 ```carthage
-github "luoxiu/CombineX" "master"
-github "luoxiu/CombineX.Foundation" "master"
+github "cx-org/CombineX" "master"
+github "cx-org/CXFoundation" "master"
 
-github "luoxiu/CombineX.Cocoa" "master"
+github "cx-org/CXCocoa" "master"
 ```
 
 ## What is Combine
@@ -77,9 +77,9 @@ CombineX is an open source implementation of Combine. In addition to having an A
 
 `CombineX` provides a number of related extensions, including but not limited to:
 
-- [CombineX.Foundation](https://github.com/luoxiu/CombineX.Foundation): provides all `Foundation` extension implementations, built on top of `CombineX`. For example, `URLSession`, `NotificationCenter`, `Timer`, `DispatchQueue+Scheduler`, `RunLoop+Scheduler`, etc.
-- [CombineX.Cocoa](https://github.com/luoxiu/CombineX.Foundation): provides `Cocoa` extension implementations, built on top of `CombineX`. For example, `KVOPublisher`, `MethodInterceptionPublisher`, `UIKit+CX`, etc.
-- [CombineX.Compatible](https://github.com/CombineXCommunity/CombineX.Compatible): provides API Shims for `CombineX` to help you resolve migration concerns that may arise. With this library, you can easily switch the underlying library from `CombineX` to `Combine` at any time.
+- [CXFoundation](https://github.com/cx-org/CombineX.Foundation): provides all `Foundation` extension implementations, built on top of `CombineX`. For example, `URLSession`, `NotificationCenter`, `Timer`, `DispatchQueue+Scheduler`, `RunLoop+Scheduler`, etc.
+- [CXCocoa](https://github.com/cx-org/CXFoundation): provides `Cocoa` extension implementations, built on top of `CombineX`. For example, `KVOPublisher`, `MethodInterceptionPublisher`, `UIKit+CX`, etc.
+- [CXCompatible](https://github.com/cx-org/CXCompatible): provides API Shims for `CombineX` to help you resolve migration concerns that may arise. With this library, you can easily switch the underlying library from `CombineX` to `Combine` at any time.
 
 **Currently, CombineX has roughly implemented all of the Combine features.**
 

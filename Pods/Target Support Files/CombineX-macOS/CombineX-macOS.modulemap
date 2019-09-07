@@ -1,0 +1,6 @@
+framework module CombineX {
+  umbrella header "CombineX-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,0 @@
-framework module CombineXCocoa {
-  umbrella header "CombineX.Cocoa-umbrella.h"
-
-  export *
-  module * { export * }
-}

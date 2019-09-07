@@ -3,7 +3,7 @@
 ![swift](https://img.shields.io/badge/swift-5.0-orange)
 ![install](https://img.shields.io/badge/install-cocoapods%20%7C%20carthage-ff69b4)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20watchos%20%7C%20tvos-lightgrey)
-![license](https://img.shields.io/github/license/luoxiu/combinex?color=black)
+![license](https://img.shields.io/github/license/cx-org/CXCocoa?color=black)
 
 ## 注意
 
@@ -13,7 +13,7 @@
 
 ## 什么是 CombineX.Cocoa
 
-与 ReactiveCocoa 和 ReaciveSwift, RxCocoa 和 RxSwift 的关系一样，CombineX.Cocoa 是 [CombineX.swift](https://github.com/luoxiu/CombineX) 的衍生库。它为 Cocoa Framework 框架提供了 [Combine](https://developer.apple.com/documentation/combine) 扩展，让你可以更优雅书写 Cocoa 相关的异步代码。
+与 ReactiveCocoa 和 ReaciveSwift, RxCocoa 和 RxSwift 的关系一样，CXCocoa 是 [CombineX.swift](https://github.com/cx-org/CombineX) 的衍生库。它为 Cocoa Framework 框架提供了 [Combine](https://developer.apple.com/documentation/combine) 扩展，让你可以更优雅书写 Cocoa 相关的异步代码。
 
 它包括但不限于：
 
@@ -24,7 +24,7 @@
 - UIScheduler
 - ...
 
-这一切都基于 [CombineX](https://github.com/luoxiu/CombineX) 实现。**但是，在 Combine 正式发布后，你可以自由地切换底层支援。**
+这一切都基于 [CombineX](https://github.com/cx-org/CombineX) 实现。**但是，在 Combine 正式发布后，你可以自由地切换底层支援。**
 
 ## 实例
 
@@ -39,20 +39,20 @@
 
 ```ruby
 # forcing master branches for now.
-pod 'CombineX.swift', :git => 'https://github.com/luoxiu/CombineX.git', :branch => 'master'
-pod 'CombineX.Foundation', :git => 'https://github.com/luoxiu/CombineX.Foundation.git', :branch => 'master'
+pod 'CombineX', :git => 'https://github.com/cx-org/CombineX.git', :branch => 'master'
+pod 'CXFoundation', :git => 'https://github.com/cx-org/CXFoundation.git', :branch => 'master'
   
 
-pod 'CombineX.Cocoa', :git => 'https://github.com/luoxiu/CombineX.Cocoa.git', :branch => 'master'
+pod 'CXCocoa', :git => 'https://github.com/cx-org/CXCocoa.git', :branch => 'master'
 ```
 
 ### Carthage
 
 ```carthage
-github "luoxiu/CombineX" "master"
-github "luoxiu/CombineX.Foundation" "master"
+github "cx-org/CombineX" "master"
+github "cx-org/CXFoundation" "master"
 
-github "luoxiu/CombineX.Cocoa" "master"
+github "cx-org/CXCocoa" "master"
 ```
 
 ## 什么是 Combine
@@ -77,9 +77,9 @@ Combine 是 Apple 在 WWDC 2019 上推出的响应式框架，它「参考」了
 
 `CombineX` 贴心地为你提供了诸多相关扩展，包括但不限于：
 
-- [CombineX.Foundation](https://github.com/luoxiu/CombineX.Foundation)：提供所有 `Foundation` 的扩展实现，基于 `CombineX`。比如 `URLSession`，`NotificationCenter`，`Timer`，`DispatchQueue+Scheduler`，`RunLoop+Scheduler`等。
-- [CombineX.Cocoa](https://github.com/luoxiu/CombineX.Foundation)：提供 `Cocoa` 的扩展实现，基于 `CombineX`。比如 `KVOPublisher`，`MethodInterceptionPublisher`，`UIKit+CX` 等。
-- [CombineX.Compatible](https://github.com/CombineXCommunity/CombineX.Compatible)：提供 `CombineX` 的 API Shims，帮助你解决可能会出现的迁移顾虑。通过该库，你可以在任何时候轻松地被底层库从 `CombineX` 切换到 `Combine`。
+- [CXFoundation](https://github.com/cx-org/CombineX.Foundation)：提供所有 `Foundation` 的扩展实现，基于 `CombineX`。比如 `URLSession`，`NotificationCenter`，`Timer`，`DispatchQueue+Scheduler`，`RunLoop+Scheduler`等。
+- [CXCocoa](https://github.com/cx-org/CXFoundation)：提供 `Cocoa` 的扩展实现，基于 `CombineX`。比如 `KVOPublisher`，`MethodInterceptionPublisher`，`UIKit+CX` 等。
+- [CXCompatible](https://github.com/cx-org/CXCompatible)：提供 `CombineX` 的 API Shims，帮助你解决可能会出现的迁移顾虑。通过该库，你可以在任何时候轻松地被底层库从 `CombineX` 切换到 `Combine`。
 
 **目前，CombineX 已经粗略实现了 Combine 的所有功能。**
 

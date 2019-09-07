@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CombineX.Cocoa" "${PODS_CONFIGURATION_BUILD_DIR}/CombineX.Foundation" "${PODS_CONFIGURATION_BUILD_DIR}/CombineX.swift"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CXCocoa" "${PODS_CONFIGURATION_BUILD_DIR}/CXFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/CombineX"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CombineX.Cocoa/CombineXCocoa.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CombineX.Foundation/CombineXFoundation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CombineX.swift/CombineX.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CXCocoa/CXCocoa.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CXFoundation/CXFoundation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CombineX/CombineX.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "CombineX" -framework "CombineXCocoa" -framework "CombineXFoundation"
+OTHER_LDFLAGS = $(inherited) -framework "CXCocoa" -framework "CXFoundation" -framework "CombineX"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

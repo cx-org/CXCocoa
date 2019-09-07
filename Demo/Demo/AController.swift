@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CombineXCocoa
+import CXCocoa
 
 class AController: UIViewController {
 

@@ -1,0 +1,6 @@
+framework module CXFoundation {
+  umbrella header "CXFoundation-tvOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

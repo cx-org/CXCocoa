@@ -1,6 +1,0 @@
-framework module CombineXFoundation {
-  umbrella header "CombineX.Foundation-umbrella.h"
-
-  export *
-  module * { export * }
-}

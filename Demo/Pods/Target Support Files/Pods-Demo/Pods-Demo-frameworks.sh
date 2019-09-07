@@ -161,14 +161,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CombineX.Cocoa/CombineXCocoa.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CombineX.Foundation/CombineXFoundation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CombineX.swift/CombineX.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CXCocoa/CXCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CXFoundation/CXFoundation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CombineX/CombineX.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CombineX.Cocoa/CombineXCocoa.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CombineX.Foundation/CombineXFoundation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CombineX.swift/CombineX.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CXCocoa/CXCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CXFoundation/CXFoundation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CombineX/CombineX.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

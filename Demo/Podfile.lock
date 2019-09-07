@@ -1,38 +1,38 @@
 PODS:
-  - CombineX.Cocoa (0.0.1-beta.1):
-    - CombineX.Foundation (~> 0.0.1-beta.2)
-  - CombineX.Foundation (0.0.1-beta.2):
-    - CombineX.swift (~> 0.0.1-beta.2)
-  - CombineX.swift (0.0.1-beta.2)
+  - CombineX (0.0.1-beta.2)
+  - CXCocoa (0.0.1-beta.1):
+    - CXFoundation (~> 0.0.1-beta.3)
+  - CXFoundation (0.0.1-beta.3):
+    - CombineX (~> 0.0.1-beta.2)
 
 DEPENDENCIES:
-  - CombineX.Cocoa (from `../`)
-  - CombineX.Foundation (from `https://github.com/luoxiu/CombineX.Foundation.git`, branch `master`)
-  - CombineX.swift (from `https://github.com/luoxiu/CombineX.git`, branch `master`)
+  - CombineX (from `https://github.com/cx-org/CombineX.git`, branch `master`)
+  - CXCocoa (from `../`)
+  - CXFoundation (from `https://github.com/cx-org/CXFoundation.git`, branch `master`)
 
 EXTERNAL SOURCES:
-  CombineX.Cocoa:
+  CombineX:
+    :branch: master
+    :git: https://github.com/cx-org/CombineX.git
+  CXCocoa:
     :path: "../"
-  CombineX.Foundation:
+  CXFoundation:
     :branch: master
-    :git: https://github.com/luoxiu/CombineX.Foundation.git
-  CombineX.swift:
-    :branch: master
-    :git: https://github.com/luoxiu/CombineX.git
+    :git: https://github.com/cx-org/CXFoundation.git
 
 CHECKOUT OPTIONS:
-  CombineX.Foundation:
-    :commit: 296e6feb867cae90f6dd08336899851bb85e7f88
-    :git: https://github.com/luoxiu/CombineX.Foundation.git
-  CombineX.swift:
-    :commit: b91697163c7483255d30a0cbbde64b591f28a011
-    :git: https://github.com/luoxiu/CombineX.git
+  CombineX:
+    :commit: 9aa0e3e77580bbc4ecd3f34f926c6af5e0b4e2b6
+    :git: https://github.com/cx-org/CombineX.git
+  CXFoundation:
+    :commit: 02fca0f1f7cda77c0c2bd5175b9807a9eed0c06b
+    :git: https://github.com/cx-org/CXFoundation.git
 
 SPEC CHECKSUMS:
-  CombineX.Cocoa: b84cae6b300a4df66192920f77ffec740d80a85f
-  CombineX.Foundation: c44a21188c0b23e136861ebfc88422070cbf9a83
-  CombineX.swift: 7ec90db9f1b438e14db64f2291039a879e993e01
+  CombineX: b8c481e041b5e50faee4c7bf3b87a29c577b29f9
+  CXCocoa: ad939069f1d07dbeac405596b49b4c5e37546c8a
+  CXFoundation: 93e348f42de7a81f7d33b2613cb3a20a105ca5b8
 
-PODFILE CHECKSUM: 05b9a0c81aef03da0265201c528746bc82f56a52
+PODFILE CHECKSUM: 6810dba79a77633e5c9c172e95ed797c54ef9260
 
 COCOAPODS: 1.7.3

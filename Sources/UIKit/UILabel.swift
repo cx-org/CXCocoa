@@ -1,6 +1,4 @@
 import UIKit
-import CombineXFoundation
-
 extension CombineXBox where Base: UILabel {
     
     public var text: UIBinder<String?> {

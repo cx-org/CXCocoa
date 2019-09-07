@@ -1,4 +1,3 @@
-import CombineXFoundation
 import UIKit
 
 extension CombineXBox where Base: UISegmentedControl {

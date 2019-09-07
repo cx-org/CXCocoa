@@ -1,6 +1,4 @@
 import Foundation
-import CombineXFoundation
-
 extension CombineXBox where Base: AnyObject {
     
     func sync<T>(_ body: (Base) throws -> T) rethrows -> T {

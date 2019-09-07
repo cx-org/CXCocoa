@@ -1,21 +1,22 @@
-abstract_target 'CombineXCocoa' do
+abstract_target 'CXCocoa' do
   use_frameworks!
   
-  pod 'CombineX.Foundation', '~> 0.0.1-beta.2'
+  pod 'CombineX', :git => 'https://github.com/cx-org/CombineX.git', :branch => 'master'
+  pod 'CXFoundation', :git => 'https://github.com/cx-org/CXFoundation.git', :branch => 'master'
 
-  target 'CombineXCocoa-iOS' do
+  target 'CXCocoa-iOS' do
     platform :ios, '10.0'
   end
 
-  target 'CombineXCocoa-macOS' do
+  target 'CXCocoa-macOS' do
     platform :osx, '10.12'
   end
 
-  target 'CombineXCocoa-tvOS' do
+  target 'CXCocoa-tvOS' do
     platform :tvos, '10.0'
   end
 
-  target 'CombineXCocoa-watchOS' do
+  target 'CXCocoa-watchOS' do
     platform :watchos, '3.0'
   end
 

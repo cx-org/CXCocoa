@@ -1,0 +1,6 @@
+framework module CXCocoa {
+  umbrella header "CXCocoa-umbrella.h"
+
+  export *
+  module * { export * }
+}

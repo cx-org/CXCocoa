@@ -1,4 +1,3 @@
-import CombineXFoundation
 import Foundation
 
 class DelegateProxy<Delegate: NSObjectProtocol>: NSObject {

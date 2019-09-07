@@ -1,6 +1,4 @@
 import UIKit
-import CombineXFoundation
-
 extension CombineXBox where Base: UISwitch {
     
     public var isOn: ControlPropertyBinder<Bool> {

@@ -3,9 +3,9 @@ platform :ios, '10.0'
 target 'Demo' do
   use_frameworks!
 
-  pod 'CombineX.swift', :git => 'https://github.com/luoxiu/CombineX.git', :branch => 'master'
-  pod 'CombineX.Foundation', :git => 'https://github.com/luoxiu/CombineX.Foundation.git', :branch => 'master'
-  
-  pod 'CombineX.Cocoa', :path => '../'
+  pod 'CombineX', :git => 'https://github.com/cx-org/CombineX.git', :branch => 'master'
+  pod 'CXFoundation', :git => 'https://github.com/cx-org/CXFoundation.git', :branch => 'master'
+
+  pod 'CXCocoa', :path => '../'
 
 end

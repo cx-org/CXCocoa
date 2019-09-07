@@ -1,0 +1,6 @@
+framework module Pods_CXCocoa_CXCocoa_watchOS {
+  umbrella header "Pods-CXCocoa-CXCocoa-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

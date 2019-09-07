@@ -462,7 +462,7 @@
 			dependencies = (
 			);
 			name = "CXCocoa-iOS";
-			productName = "CombineXCocoa-iOS";
+			productName = "CXCocoa-iOS";
 			productReference = 6668BEA92309A01B006C61E6 /* CXCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -481,7 +481,7 @@
 			dependencies = (
 			);
 			name = "CXCocoa-watchOS";
-			productName = "CombineXCocoa-watchOS";
+			productName = "CXCocoa-watchOS";
 			productReference = 6668BEB72309A04B006C61E6 /* CXCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -500,7 +500,7 @@
 			dependencies = (
 			);
 			name = "CXCocoa-tvOS";
-			productName = "CombineXCocoa-tvOS";
+			productName = "CXCocoa-tvOS";
 			productReference = 6668BEC42309A060006C61E6 /* CXCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -519,7 +519,7 @@
 			dependencies = (
 			);
 			name = "CXCocoa-macOS";
-			productName = "CombineXCocoa-macOS";
+			productName = "CXCocoa-macOS";
 			productReference = 6668BED12309A07B006C61E6 /* CXCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};

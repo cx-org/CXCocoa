@@ -1,6 +1,6 @@
 {
   "name": "CombineX.Cocoa",
-  "module_name": "CombineXCocoa",
+  "module_name": "CXCocoa",
   "version": "0.0.1-beta.1",
   "summary": "Cocoa extensions built on top of CombineX",
   "homepage": "https://github.com/luoxiu/CombineX.Cocoa",

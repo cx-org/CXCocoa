@@ -25,8 +25,8 @@
 		666DCC1C2304548B00F53946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		666DCC1F2304548B00F53946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		666DCC212304548B00F53946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		666DCC352304582900F53946 /* CombineXCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CombineXCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		669225142308F7740078CE5E /* CombineXCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CombineXCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		666DCC352304582900F53946 /* CXCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CXCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		669225142308F7740078CE5E /* CXCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CXCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AD7E2D230D9AA10071B6F2 /* BController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BController.swift; sourceTree = "<group>"; };
 		D07F27EC77ACEBEF32A00EF2 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F0C618FE2BBDF0D04D7081F4 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,8 +79,8 @@
 		666DCC342304582900F53946 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				669225142308F7740078CE5E /* CombineXCocoa.framework */,
-				666DCC352304582900F53946 /* CombineXCocoa.framework */,
+				669225142308F7740078CE5E /* CXCocoa.framework */,
+				666DCC352304582900F53946 /* CXCocoa.framework */,
 				F0C618FE2BBDF0D04D7081F4 /* Pods_Demo.framework */,
 			);
 			name = Frameworks;

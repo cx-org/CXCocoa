@@ -1,4 +1,5 @@
 import UIKit
+
 extension CombineXBox where Base: UIProgressView {
     
     public var progress: UIBinder<Float> {

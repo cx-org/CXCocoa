@@ -1,4 +1,5 @@
 import UIKit
+
 extension CombineXBox where Base: UIActivityIndicatorView {
     
     public var isAnimating: UIBinder<Bool> {

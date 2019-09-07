@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
     s.watchos.deployment_target   = "3.0"
 
     s.source = { :git => "https://github.com/cx-org/CXCocoa.git", :tag => "#{s.version}" }
-    s.source_files  = "Sources/**/*.{swift,h,m}"
+    s.source_files  = "Sources/Shared/**/*.{swift,h,m}"
+    s.ios.source_files = "Sources/UIKit/**/*.swift"
 
     s.dependency 'CXFoundation', '~> 0.0.1-beta.3'
   

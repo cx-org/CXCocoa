@@ -1,4 +1,5 @@
 import UIKit
+
 extension CombineXBox where Base: UISwitch {
     
     public var isOn: ControlPropertyBinder<Bool> {

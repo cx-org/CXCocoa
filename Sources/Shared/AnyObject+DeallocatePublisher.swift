@@ -1,4 +1,5 @@
 import Foundation
+
 extension CombineXBox where Base: AnyObject {
     
     public var deallocate: DeallocatePublisher {

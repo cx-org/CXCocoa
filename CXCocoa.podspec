@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "CXCocoa"
-    s.version      = "0.0.1-beta.1"
+    s.version      = "0.0.1-beta.2"
     s.summary      = "Cocoa extensions built on top of CombineX"
     s.homepage     = "https://github.com/cx-org/CXCocoa"
     s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
     s.ios.source_files = "Sources/UIKit/**/*.swift"
 
     s.dependency 'CXFoundation', '~> 0.0.1-beta.3'
-  
+    s.dependency 'CXCompatible', '~> 0.0.1-beta.2'
+    
 end

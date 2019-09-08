@@ -1,5 +1,4 @@
 import Foundation
-import CombineX
 
 extension CombineXBox where Base: NSObject {
     

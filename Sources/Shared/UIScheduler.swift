@@ -2,17 +2,17 @@ import Foundation
 
 public class UIScheduler: Scheduler {
     
-    public typealias DispatchQueueScheduler = DispatchQueue.CX.DispatchQueueScheduler
+    public typealias RunLoopScheduler = RunLoop.CX.RunLoopScheduler
 
-    public typealias SchedulerOptions = DispatchQueueScheduler.SchedulerOptions
-    public typealias SchedulerTimeType = DispatchQueueScheduler.SchedulerTimeType
+    public typealias SchedulerOptions = RunLoopScheduler.SchedulerOptions
+    public typealias SchedulerTimeType = RunLoopScheduler.SchedulerTimeType
     
     public static let shared = UIScheduler()
     
     private init() { }
     
     private let queueLength = Atom<Int>(val: 0)
-    private let scheduler = DispatchQueue.main.cx.scheduler
+    private let scheduler = RunLoop.main.cx.scheduler
     
     public var now: SchedulerTimeType {
         return self.scheduler.now

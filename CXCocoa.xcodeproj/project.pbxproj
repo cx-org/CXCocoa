@@ -11,6 +11,10 @@
 		6227F2DE230E4A1400807B54 /* UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227F2DD230E4A1400807B54 /* UIPickerView.swift */; };
 		6227F2E0230E4C2100807B54 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227F2DF230E4C2100807B54 /* UIView.swift */; };
 		6238D3C7C82CAF747ED56F38 /* Pods_CXCocoa_CXCocoa_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5BF1258B1135AA07CCE223 /* Pods_CXCocoa_CXCocoa_tvOS.framework */; };
+		664A3DC323250254006F8CAB /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A3DC223250254006F8CAB /* @_exported.swift */; };
+		664A3DC423250254006F8CAB /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A3DC223250254006F8CAB /* @_exported.swift */; };
+		664A3DC523250254006F8CAB /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A3DC223250254006F8CAB /* @_exported.swift */; };
+		664A3DC623250254006F8CAB /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A3DC223250254006F8CAB /* @_exported.swift */; };
 		664ED8D5230C2C8300287D68 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ED8D4230C2C8300287D68 /* UITextView.swift */; };
 		6668BEAE2309A01B006C61E6 /* CXCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6668BEAC2309A01B006C61E6 /* CXCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6668BEDA2309A2C3006C61E6 /* CXCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6668BEAC2309A01B006C61E6 /* CXCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -124,10 +128,6 @@
 		66AD7E33230D9B460071B6F2 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E32230D9B460071B6F2 /* UIActivityIndicatorView.swift */; };
 		66AD7E35230D9B8B0071B6F2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E34230D9B8B0071B6F2 /* UIViewController.swift */; };
 		66AD7E37230D9DAE0071B6F2 /* UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD7E36230D9DAE0071B6F2 /* UITabBarItem.swift */; };
-		66C29D20230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
-		66C29D21230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
-		66C29D22230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
-		66C29D23230AD0A600DE6A70 /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D1F230AD0A600DE6A70 /* @_exported.swift */; };
 		66C29D25230AD62F00DE6A70 /* TakeWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D24230AD62F00DE6A70 /* TakeWhile.swift */; };
 		66C29D26230AD62F00DE6A70 /* TakeWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D24230AD62F00DE6A70 /* TakeWhile.swift */; };
 		66C29D27230AD62F00DE6A70 /* TakeWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D24230AD62F00DE6A70 /* TakeWhile.swift */; };
@@ -152,6 +152,7 @@
 		6227F2DD230E4A1400807B54 /* UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerView.swift; sourceTree = "<group>"; };
 		6227F2DF230E4C2100807B54 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		64A7FF6F2FAB4DEC916EDFC4 /* Pods-CXCocoa-CXCocoa-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXCocoa-CXCocoa-iOS.release.xcconfig"; path = "Target Support Files/Pods-CXCocoa-CXCocoa-iOS/Pods-CXCocoa-CXCocoa-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		664A3DC223250254006F8CAB /* @_exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "@_exported.swift"; sourceTree = "<group>"; };
 		664ED8D4230C2C8300287D68 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		6668BEA92309A01B006C61E6 /* CXCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CXCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6668BEAC2309A01B006C61E6 /* CXCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCocoa.h; sourceTree = "<group>"; };
@@ -196,7 +197,6 @@
 		66AD7E34230D9B8B0071B6F2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		66AD7E36230D9DAE0071B6F2 /* UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItem.swift; sourceTree = "<group>"; };
 		66C29D1E230ACC7E00DE6A70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		66C29D1F230AD0A600DE6A70 /* @_exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "@_exported.swift"; sourceTree = "<group>"; };
 		66C29D24230AD62F00DE6A70 /* TakeWhile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeWhile.swift; sourceTree = "<group>"; };
 		66C29D29230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+ControlPropertyBinder.swift"; sourceTree = "<group>"; };
 		66C29D2E230AF22B00DE6A70 /* UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePicker.swift; sourceTree = "<group>"; };
@@ -371,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				669225542309A7A60078CE5E /* Internal */,
-				66C29D1F230AD0A600DE6A70 /* @_exported.swift */,
 				669225572309A7A60078CE5E /* AnyBinder.swift */,
 				6692256F2309A7A70078CE5E /* AnyObject+DeallocatePublisher.swift */,
 				669225682309A7A60078CE5E /* AnyObject+KVOPublisher.swift */,
@@ -382,6 +381,7 @@
 				66AD7E23230D93F80071B6F2 /* UIBinder.swift */,
 				669225532309A7A60078CE5E /* UIScheduler.swift */,
 				6692254D2309A7A60078CE5E /* _cx_objc */,
+				664A3DC223250254006F8CAB /* @_exported.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -536,7 +536,7 @@
 		6668BE9E23099FCD006C61E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1100;
 				TargetAttributes = {
 					6668BEA82309A01B006C61E6 = {
 						CreatedOnToolsVersion = 10.3;
@@ -562,6 +562,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 6668BE9D23099FCD006C61E6;
 			productRefGroup = 6668BEAA2309A01B006C61E6 /* Products */;
@@ -707,7 +708,6 @@
 				669225B02309A7A70078CE5E /* NSObject+class.swift in Sources */,
 				669225D82309A7A70078CE5E /* UISegmentedControl.swift in Sources */,
 				669225C42309A7A70078CE5E /* Objc+Const.swift in Sources */,
-				66C29D20230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				6692259C2309A7A70078CE5E /* Atom.swift in Sources */,
 				6692258C2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225C82309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
@@ -745,6 +745,7 @@
 				66AD7E29230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D2A230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift in Sources */,
 				669225A42309A7A70078CE5E /* DelegateProxy.swift in Sources */,
+				664A3DC323250254006F8CAB /* @_exported.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,12 +756,12 @@
 				66AD7E2A230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D26230AD62F00DE6A70 /* TakeWhile.swift in Sources */,
 				669225912309A7A70078CE5E /* StaticString.swift in Sources */,
+				664A3DC423250254006F8CAB /* @_exported.swift in Sources */,
 				669225B12309A7A70078CE5E /* NSObject+class.swift in Sources */,
 				669225C52309A7A70078CE5E /* Objc+Const.swift in Sources */,
 				6692259D2309A7A70078CE5E /* Atom.swift in Sources */,
 				6692258D2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225C92309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
-				66C29D21230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				669225C12309A7A70078CE5E /* associate.swift in Sources */,
 				669225952309A7A70078CE5E /* DispatchQueue.swift in Sources */,
 				669225B52309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,
@@ -788,12 +789,12 @@
 				66AD7E2B230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D27230AD62F00DE6A70 /* TakeWhile.swift in Sources */,
 				669225922309A7A70078CE5E /* StaticString.swift in Sources */,
+				664A3DC523250254006F8CAB /* @_exported.swift in Sources */,
 				669225B22309A7A70078CE5E /* NSObject+class.swift in Sources */,
 				669225C62309A7A70078CE5E /* Objc+Const.swift in Sources */,
 				6692259E2309A7A70078CE5E /* Atom.swift in Sources */,
 				6692258E2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225CA2309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
-				66C29D22230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				669225C22309A7A70078CE5E /* associate.swift in Sources */,
 				669225962309A7A70078CE5E /* DispatchQueue.swift in Sources */,
 				669225B62309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,
@@ -821,12 +822,12 @@
 				66AD7E2C230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
 				66C29D28230AD62F00DE6A70 /* TakeWhile.swift in Sources */,
 				669225932309A7A70078CE5E /* StaticString.swift in Sources */,
+				664A3DC623250254006F8CAB /* @_exported.swift in Sources */,
 				669225B32309A7A70078CE5E /* NSObject+class.swift in Sources */,
 				669225C72309A7A70078CE5E /* Objc+Const.swift in Sources */,
 				6692259F2309A7A70078CE5E /* Atom.swift in Sources */,
 				6692258F2309A7A70078CE5E /* AnyBinder.swift in Sources */,
 				669225CB2309A7A70078CE5E /* AnyObject+KVOPublisher.swift in Sources */,
-				66C29D23230AD0A600DE6A70 /* @_exported.swift in Sources */,
 				669225C32309A7A70078CE5E /* associate.swift in Sources */,
 				669225972309A7A70078CE5E /* DispatchQueue.swift in Sources */,
 				669225B72309A7A70078CE5E /* AnyObject+Lifetime.swift in Sources */,
@@ -853,12 +854,64 @@
 		6668BEA223099FCD006C61E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		6668BEA323099FCD006C61E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
@@ -895,7 +948,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -923,7 +976,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -979,7 +1032,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -993,6 +1046,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1001,7 +1058,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1383,7 +1440,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1468,7 +1525,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;

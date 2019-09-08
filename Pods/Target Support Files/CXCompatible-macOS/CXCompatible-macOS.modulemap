@@ -1,0 +1,6 @@
+framework module CXCompatible {
+  umbrella header "CXCompatible-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

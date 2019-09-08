@@ -1,5 +1,3 @@
-import CombineX
-
 extension Publisher {
     
     public func take(whileLifetimeOf object: AnyObject) -> Publishers.TakeWhileLifetime<Self> {

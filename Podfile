@@ -3,6 +3,7 @@ abstract_target 'CXCocoa' do
   
   pod 'CombineX', :git => 'https://github.com/cx-org/CombineX.git', :branch => 'master'
   pod 'CXFoundation', :git => 'https://github.com/cx-org/CXFoundation.git', :branch => 'master'
+  pod 'CXCompatible', :git => 'https://github.com/cx-org/CXCompatible.git', :branch => 'master'
 
   target 'CXCocoa-iOS' do
     platform :ios, '10.0'

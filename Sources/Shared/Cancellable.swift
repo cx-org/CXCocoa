@@ -1,5 +1,3 @@
-import CombineX
-
 extension Cancellable where Self: AnyObject {
 
     public func cancel(by object: AnyObject) {

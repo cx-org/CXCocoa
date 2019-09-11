@@ -1,0 +1,6 @@
+framework module CXCompatible {
+  umbrella header "CXCompatible-umbrella.h"
+
+  export *
+  module * { export * }
+}

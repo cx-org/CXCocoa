@@ -1,6 +1,6 @@
 {
   "name": "CXCocoa",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
   "summary": "Cocoa extensions built on top of CombineX",
   "homepage": "https://github.com/cx-org/CXCocoa",
   "license": {
@@ -21,12 +21,18 @@
   },
   "source": {
     "git": "https://github.com/cx-org/CXCocoa.git",
-    "tag": "0.0.1-beta.1"
+    "tag": "0.0.1-beta.2"
   },
-  "source_files": "Sources/**/*.{swift,h,m}",
+  "source_files": "Sources/Shared/**/*.{swift,h,m}",
+  "ios": {
+    "source_files": "Sources/UIKit/**/*.swift"
+  },
   "dependencies": {
     "CXFoundation": [
       "~> 0.0.1-beta.3"
+    ],
+    "CXCompatible": [
+      "~> 0.0.1-beta.2"
     ]
   },
   "swift_version": "5.0"

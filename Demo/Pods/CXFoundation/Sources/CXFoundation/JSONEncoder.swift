@@ -1,34 +1,27 @@
 import CombineX
 import Foundation
 
-extension JSONEncoder: CombineXCompatible { }
+public typealias JSONEncoderCXWrapper = JSONEncoder.JSONEncoderCXWrapper
 
-extension JSONEncoder {
+extension CombineXCompatible where Self: JSONEncoder {
     
-    public enum CX { }
-}
-
-extension CombineXBox where Base: JSONEncoder {
+    public var cx: JSONEncoderCXWrapper {
+        return JSONEncoderCXWrapper(self)
+    }
     
-    public var encoder: JSONEncoder.CX.Encoder {
-        return .init(self.base)
+    public static var cx: JSONEncoderCXWrapper.Type {
+        return JSONEncoderCXWrapper.self
     }
 }
 
-extension JSONEncoder.CX {
+extension JSONEncoder: CombineXCompatible {
     
-    public struct Encoder: CombineX.TopLevelEncoder {
+    public class JSONEncoderCXWrapper: AnyObjectCXWrapper<JSONEncoder>, CombineX.TopLevelEncoder {
         
-        let encoder: JSONEncoder
-        
-        init(_ encoder: JSONEncoder) {
-            self.encoder = encoder
-        }
-     
         public typealias Output = Data
         
         public func encode<T>(_ value: T) throws -> Output where T : Encodable {
-            return try self.encoder.encode(value)
+            return try self.base.encode(value)
         }
     }
 }

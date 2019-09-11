@@ -1,10 +1,10 @@
 # CombineX.Cocoa([中文](README.zh_cn.md))
 
-![swift](https://img.shields.io/badge/swift-5.0-orange)
+[![release](https://img.shields.io/github/release-pre/cx-org/CXCocoa)](https://github.com/cx-org/CXCocoa/releases)
 ![install](https://img.shields.io/badge/install-cocoapods%20%7C%20carthage-ff69b4)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20watchos%20%7C%20tvos-lightgrey)
 ![license](https://img.shields.io/github/license/cx-org/CXCocoa?color=black)
-[![dicord](https://img.shields.io/badge/chat-discord-blue)](https://discord.gg/cresT3X)
+[![dicord](https://img.shields.io/badge/chat-discord-9cf)](https://discord.gg/cresT3X)
 
 ## Notice
 

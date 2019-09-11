@@ -32,7 +32,7 @@ class AController: UIViewController {
             .cancel(by: self)
         
         keywordTextField.cx.text
-            .throttle(for: .seconds(0.1), scheduler: DispatchQueue.main.cx.scheduler, latest: true)
+            .throttle(for: .seconds(0.1), scheduler: DispatchQueue.main.cx, latest: true)
             .combineLatest(langPub, isOnSwitch.cx.isOn)
             .compactMap { (name, lang, isOn) -> URL? in
                 guard isOn else { return nil }

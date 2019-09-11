@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "CXCocoa.h"
 #import "_cx_objc.h"
 
 FOUNDATION_EXPORT double CXCocoaVersionNumber;

@@ -162,11 +162,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CXCocoa/CXCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CXCompatible/CXCompatible.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CXFoundation/CXFoundation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CombineX/CombineX.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CXCocoa/CXCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CXCompatible/CXCompatible.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CXFoundation/CXFoundation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CombineX/CombineX.framework"
 fi

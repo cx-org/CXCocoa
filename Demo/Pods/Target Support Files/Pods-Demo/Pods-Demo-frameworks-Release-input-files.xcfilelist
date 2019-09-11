@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CXCocoa/CXCocoa.framework
+${BUILT_PRODUCTS_DIR}/CXCompatible/CXCompatible.framework
 ${BUILT_PRODUCTS_DIR}/CXFoundation/CXFoundation.framework
 ${BUILT_PRODUCTS_DIR}/CombineX/CombineX.framework

@@ -1,6 +1,6 @@
 {
   "name": "CombineX",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.3",
   "summary": "Open source implementation for Apple's Combine.",
   "homepage": "https://github.com/cx-org/CombineX",
   "license": {
@@ -22,7 +22,7 @@
   },
   "source": {
     "git": "https://github.com/cx-org/CombineX.git",
-    "tag": "0.0.1-beta.2"
+    "tag": "0.0.1-beta.3"
   },
   "source_files": "Sources/CombineX/**/*.swift",
   "swift_version": "5.0"

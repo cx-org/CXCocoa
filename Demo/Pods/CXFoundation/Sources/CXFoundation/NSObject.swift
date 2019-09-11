@@ -1,7 +1,26 @@
 import CombineX
 import Foundation
 
-extension NSObject: CombineXCompatible { }
+open class AnyObjectCXWrapper<Base>: CombineXWrapper {
+    public let base: Base
+    required public init(_ base: Base) {
+        self.base = base
+    }
+}
+
+extension NSObject: CombineXCompatible {
+}
+
+extension CombineXCompatible where Self: AnyObject {
+    
+    public var cx: AnyObjectCXWrapper<Self> {
+        return .init(self)
+    }
+    
+    public static var cx: AnyObjectCXWrapper<Self>.Type {
+        return AnyObjectCXWrapper<Self>.self
+    }
+}
 
 extension NSObject {
     
@@ -44,7 +63,7 @@ extension NSObject.CX {
 
 
 // FIXME: NSObject.KeyValueObservingPublisher doesn't conform ot `Publisher` protocol, 🤔.
-extension CombineXBox where Base: NSObject {
+extension CombineXWrapper where Base: NSObject {
     
     func keyValueObservingPublisher<Value>(_ keyPath: KeyPath<Base, Value>, _ options: NSKeyValueObservingOptions) -> NSObject.CX.KeyValueObservingPublisher<Base, Value> {
         return .init(object: self.base, keyPath: keyPath, options: options)

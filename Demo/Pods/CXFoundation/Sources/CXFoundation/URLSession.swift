@@ -1,7 +1,7 @@
 import Foundation
 import CombineX
 
-extension CombineXBox where Base: URLSession {
+extension CombineXWrapper where Base: URLSession {
     
     /// Returns a publisher that wraps a URL session data task for a given URL.
     ///

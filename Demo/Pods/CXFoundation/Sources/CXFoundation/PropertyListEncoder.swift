@@ -2,34 +2,27 @@ import CombineX
 import Foundation
 
 #if !os(Linux)
-extension PropertyListEncoder: CombineXCompatible { }
+public typealias PropertyListEncoderCXWrapper = PropertyListEncoder.PropertyListEncoderCXWrapper
 
-extension PropertyListEncoder {
+extension CombineXCompatible where Self: PropertyListEncoder {
     
-    public enum CX { }
-}
-
-extension CombineXBox where Base: PropertyListEncoder {
+    public var cx: PropertyListEncoderCXWrapper {
+        return PropertyListEncoderCXWrapper(self)
+    }
     
-    public var encoder: PropertyListEncoder.CX.Encoder {
-        return .init(self.base)
+    public static var cx: PropertyListEncoderCXWrapper.Type {
+        return PropertyListEncoderCXWrapper.self
     }
 }
 
-extension PropertyListEncoder.CX {
+extension PropertyListEncoder: CombineXCompatible {
     
-    public struct Encoder: CombineX.TopLevelEncoder {
-        
-        let encoder: PropertyListEncoder
-        
-        init(_ encoder: PropertyListEncoder) {
-            self.encoder = encoder
-        }
+    public class PropertyListEncoderCXWrapper: AnyObjectCXWrapper<PropertyListEncoder>, CombineX.TopLevelEncoder {
      
         public typealias Output = Data
         
         public func encode<T>(_ value: T) throws -> Output where T : Encodable {
-            return try self.encoder.encode(value)
+            return try self.base.encode(value)
         }
     }
 }

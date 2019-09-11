@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UIViewController {
+extension CombineXWrapper where Base: UIViewController {
     
     public var title: UIBinder<String?> {
         return UIBinder(target: self.base) { $0.title = $1 }

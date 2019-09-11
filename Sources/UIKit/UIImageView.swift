@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UIImageView {
+extension CombineXWrapper where Base: UIImageView {
     
     public var image: UIBinder<UIImage?> {
         return UIBinder(target: self.base) { $0.image = $1 }

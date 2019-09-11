@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UITabBarItem {
+extension CombineXWrapper where Base: UITabBarItem {
     
     public var badgeValue: UIBinder<String?> {
         return UIBinder(target: self.base) { $0.badgeValue = $1 }

@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UIControl {
+extension CombineXWrapper where Base: UIControl {
     
     public func controlProperty<Value>(
         events: UIControl.Event,

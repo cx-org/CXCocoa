@@ -1,5 +1,5 @@
 import Foundation
-extension CombineXBox where Base: AnyObject {
+extension CombineXWrapper where Base: AnyObject {
     
     func sync<T>(_ body: (Base) throws -> T) rethrows -> T {
         objc_sync_enter(self.base); defer { objc_sync_exit(self.base) }

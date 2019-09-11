@@ -1,8 +1,8 @@
 PODS:
-  - CombineX (0.0.1-beta.2)
-  - CXCompatible (0.0.1-beta.1)
-  - CXFoundation (0.0.1-beta.3):
-    - CombineX (~> 0.0.1-beta.2)
+  - CombineX (0.0.1-beta.3)
+  - CXCompatible (0.0.1-beta.3)
+  - CXFoundation (0.0.1-beta.4):
+    - CombineX (~> 0.0.1-beta.3)
 
 DEPENDENCIES:
   - CombineX (from `https://github.com/cx-org/CombineX.git`, branch `master`)
@@ -22,19 +22,19 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CombineX:
-    :commit: 9aa0e3e77580bbc4ecd3f34f926c6af5e0b4e2b6
+    :commit: 37848665666ceace50e7383d2a45aa11ca5d317f
     :git: https://github.com/cx-org/CombineX.git
   CXCompatible:
-    :commit: f89cafd5173e4da09dd1cfb5469533fe84b9a9de
+    :commit: 1d60bcdc1ca5204f472ed1815ffae7246bc38cd1
     :git: https://github.com/cx-org/CXCompatible.git
   CXFoundation:
-    :commit: 02fca0f1f7cda77c0c2bd5175b9807a9eed0c06b
+    :commit: 54e25c18ea3bfd1221ec626f1c4eb30fd8b4f187
     :git: https://github.com/cx-org/CXFoundation.git
 
 SPEC CHECKSUMS:
-  CombineX: 1eeb183b472b4f6592df5b5aeac10770bf236ed3
-  CXCompatible: f3cebb59438724ce687021e0c6422215d5714eca
-  CXFoundation: fb63983bf65d79f39d56a3dde3726d61a1f27762
+  CombineX: 65c42d6a95ef122ab15e90d17faf13a7fdf6ab56
+  CXCompatible: d0b00503556eb41ac01f1ffb21511bb72754d992
+  CXFoundation: 09fa8d68c2ebed6251c1a9d14b0d21ca810df81e
 
 PODFILE CHECKSUM: 537ad861f5c02b31b518f275515420322dc5f0a7
 

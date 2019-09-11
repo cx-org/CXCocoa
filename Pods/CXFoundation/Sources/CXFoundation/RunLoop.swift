@@ -1,26 +1,22 @@
 import CombineX
 import Foundation
 
-extension CombineXBox where Base: RunLoop {
+public typealias RunLoopCXWrapper = RunLoop.RunLoopCXWrapper
 
-    // TODO: backward compatible
-    @available(OSX 10.12, iOS 10.0, tvOS 10.0, watchOS 3.0, *)
-    public var scheduler: RunLoop.CX.RunLoopScheduler {
-        return .init(self.base)
+extension CombineXCompatible where Self: RunLoop {
+    
+    public var cx: RunLoopCXWrapper {
+        return RunLoopCXWrapper(self)
+    }
+    
+    public static var cx: RunLoopCXWrapper.Type {
+        return RunLoopCXWrapper.self
     }
 }
 
-extension RunLoop.CX {
+extension RunLoop {
     
-    // TODO: backward compatible
-    @available(OSX 10.12, iOS 10.0, tvOS 10.0, watchOS 3.0, *)
-    public struct RunLoopScheduler: CombineX.Scheduler {
-        
-        let runLoop: RunLoop
-    
-        init(_ runLoop: RunLoop) {
-            self.runLoop = runLoop
-        }
+    public class RunLoopCXWrapper: AnyObjectCXWrapper<RunLoop>, CombineX.Scheduler {
         
         /// The scheduler time type used by the run loop.
         public struct SchedulerTimeType : Strideable, Codable, Hashable {
@@ -354,14 +350,14 @@ extension RunLoop.CX {
         
         /// Performs the action at the next possible opportunity.
         public func schedule(options: SchedulerOptions?, _ action: @escaping () -> Void) {
-            self.runLoop.perform {
+            self.base.cx_perform {
                 action()
             }
         }
 
         /// Performs the action at some time after the specified date.
         public func schedule(after date: SchedulerTimeType, tolerance: SchedulerTimeType.Stride, options: SchedulerOptions?, _ action: @escaping () -> Void) {
-            Timer.scheduledTimer(withTimeInterval: self.now.distance(to: date).timeInterval, repeats: false) { (_) in
+            Timer.cx_scheduledTimer(withTimeInterval: self.now.distance(to: date).timeInterval, repeats: false) { (_) in
                 action()
             }
         }
@@ -369,10 +365,10 @@ extension RunLoop.CX {
         /// Performs the action at some time after the specified date, at the specified
         /// frequency, optionally taking into account tolerance if possible.
         public func schedule(after date: SchedulerTimeType, interval: SchedulerTimeType.Stride, tolerance: SchedulerTimeType.Stride, options: SchedulerOptions?, _ action: @escaping () -> Void) -> Cancellable {
-            let timer = Timer(fire: date.date, interval: interval.timeInterval, repeats: true) { (_) in
+            let timer = Timer.cx_init(fire: date.date, interval: interval.timeInterval, repeats: true) { _ in
                 action()
             }
-            self.runLoop.add(timer, forMode: .default)
+            self.base.add(timer, forMode: .default)
             return AnyCancellable {
                 timer.invalidate()
             }

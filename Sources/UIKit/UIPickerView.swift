@@ -6,7 +6,7 @@ private class PickerViewDelegateProxy: DelegateProxy<UIPickerViewDelegate>, UIPi
     }
 }
 
-extension CombineXBox where Base: UIPickerView {
+extension CombineXWrapper where Base: UIPickerView {
     
     private var proxy: PickerViewDelegateProxy {
         return .proxy(for: base,

@@ -34,7 +34,7 @@ extension Result {
 extension Result: CombineXCompatible { }
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension CombineXBox where Base: ResultProtocol {
+extension CombineXWrapper where Base: ResultProtocol {
     
     public var publisher: Result<Base.Success, Base.Failure>.CX.Publisher {
         return .init(self.base.result)

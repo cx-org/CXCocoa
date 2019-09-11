@@ -40,7 +40,7 @@ final class Lifetime: Publisher {
         }
         
         return Global.sync(object) {
-            let box = CombineXBox(object)
+            let box = AnyCXWrapper(object)
             if let tracer = box.getAssociated(for: AssociateKeys.lifetimeTracer) {
                 return tracer.lifetime
             }
@@ -59,7 +59,7 @@ final class Lifetime: Publisher {
             
             let tracer = Tracer()
             let objcClass: AnyClass = (object as AnyObject).objcClass
-            let objcClassBox = CombineXBox(objcClass as AnyObject)
+            let objcClassBox = AnyCXWrapper(objcClass as AnyObject)
             
             let deallocSelector = sel_registerName("dealloc")
             

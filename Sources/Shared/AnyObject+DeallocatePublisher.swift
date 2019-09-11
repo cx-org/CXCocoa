@@ -1,6 +1,6 @@
 import Foundation
 
-extension CombineXBox where Base: AnyObject {
+extension CombineXWrapper where Base: AnyObject {
     
     public var deallocate: DeallocatePublisher {
         return .init(self.base)

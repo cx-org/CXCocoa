@@ -2,7 +2,19 @@
 import Foundation
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension CombineXBox where Base: NotificationCenter {
+extension CombineXCompatible where Self: NotificationCenter {
+    
+    public var cx: AnyObjectCXWrapper<NotificationCenter> {
+        return .init(self)
+    }
+    
+    public static var cx: AnyObjectCXWrapper<NotificationCenter>.Type {
+        return AnyObjectCXWrapper<NotificationCenter>.self
+    }
+}
+
+@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension CombineXWrapper where Base: NotificationCenter {
     
     /// Returns a publisher that emits events when broadcasting notifications.
     ///

@@ -1,7 +1,7 @@
 import CombineX
 import Foundation
 
-extension CombineXBox where Base: NotificationCenter {
+extension CombineXWrapper where Base: NotificationCenter {
     
     /// Returns a publisher that emits events when broadcasting notifications.
     ///

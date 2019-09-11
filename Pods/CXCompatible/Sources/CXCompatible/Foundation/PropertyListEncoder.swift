@@ -3,26 +3,24 @@ import Foundation
 
 #if !os(Linux)
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension PropertyListEncoder: CombineXCompatible { }
+public typealias PropertyListEncoderCXWrapper = PropertyListEncoder.PropertyListEncoderCXWrapper
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension PropertyListEncoder {
+extension CombineXCompatible where Self: PropertyListEncoder {
     
-    public enum CX { }
-}
-
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension CombineXBox where Base: PropertyListEncoder {
+    public var cx: PropertyListEncoderCXWrapper {
+        return self
+    }
     
-    public var encoder: PropertyListEncoder.CX.Encoder {
-        return self.base
+    public static var cx: PropertyListEncoderCXWrapper.Type {
+        return PropertyListEncoderCXWrapper.self
     }
 }
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension PropertyListEncoder.CX {
+extension PropertyListEncoder: CombineXCompatible {
     
-    public typealias Encoder = PropertyListEncoder
+    public typealias PropertyListEncoderCXWrapper = PropertyListEncoder
 }
 #endif
 

@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UIDatePicker {
+extension CombineXWrapper where Base: UIDatePicker {
     
     public var date: ControlPropertyBinder<Date> {
         return self.controlProperty(

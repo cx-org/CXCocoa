@@ -1,10 +1,8 @@
 import CombineX
 import Foundation
 
-extension CombineXBox where Base: Timer {
+extension CombineXWrapper where Base: Timer {
 
-    // TODO: backward compatible
-    @available(OSX 10.12, iOS 10.0, tvOS 10.0, watchOS 3.0, *)
     /// Returns a publisher that repeatedly emits the current date on the given interval.
     ///
     /// - Parameters:
@@ -14,7 +12,7 @@ extension CombineXBox where Base: Timer {
     ///   - mode: The run loop mode in which to run the timer.
     ///   - options: Scheduler options passed to the timer. Defaults to `nil`.
     /// - Returns: A publisher that repeatedly emits the current date on the given interval.
-    public static func publish(every interval: TimeInterval, tolerance: TimeInterval? = nil, on runLoop: RunLoop, in mode: RunLoop.Mode, options: RunLoop.CX.RunLoopScheduler.SchedulerOptions? = nil) -> Timer.CX.TimerPublisher {
+    public static func publish(every interval: TimeInterval, tolerance: TimeInterval? = nil, on runLoop: RunLoop, in mode: RunLoop.Mode, options: RunLoopCXWrapper.SchedulerOptions? = nil) -> Timer.CX.TimerPublisher {
         return .init(interval: interval, tolerance: tolerance, runLoop: runLoop, mode: mode, options: options)
     }
     
@@ -22,8 +20,6 @@ extension CombineXBox where Base: Timer {
 
 extension Timer.CX {
     
-    // TODO: backward compatible
-    @available(OSX 10.12, iOS 10.0, tvOS 10.0, watchOS 3.0, *)
     /// A publisher that repeatedly emits the current date on a given interval.
     final public class TimerPublisher : ConnectablePublisher {
 
@@ -43,7 +39,7 @@ extension Timer.CX {
 
         final public let mode: RunLoop.Mode
 
-        final public let options: RunLoop.CX.RunLoopScheduler.SchedulerOptions?
+        final public let options: RunLoopCXWrapper.SchedulerOptions?
         
         private typealias Subject = PassthroughSubject<Date, Never>
         private typealias Multicast = Publishers.Multicast<Subject, Subject>
@@ -59,7 +55,7 @@ extension Timer.CX {
         ///   - runLoop: The run loop on which the timer runs.
         ///   - mode: The run loop mode in which to run the timer.
         ///   - options: Scheduler options passed to the timer. Defaults to `nil`.
-        public init(interval: TimeInterval, tolerance: TimeInterval? = nil, runLoop: RunLoop, mode: RunLoop.Mode, options: RunLoop.CX.RunLoopScheduler.SchedulerOptions? = nil) {
+        public init(interval: TimeInterval, tolerance: TimeInterval? = nil, runLoop: RunLoop, mode: RunLoop.Mode, options: RunLoopCXWrapper.SchedulerOptions? = nil) {
             self.interval = interval
             self.tolerance = tolerance
             self.runLoop = runLoop
@@ -69,9 +65,9 @@ extension Timer.CX {
             let subject = Subject()
             self.multicast = subject.multicast(subject: Subject())
             
-            self.timer = Timer(timeInterval: self.interval, repeats: true, block: { (_) in
+            self.timer = Timer.cx_init(timeInterval: self.interval, repeats: true) { _ in
                 subject.send(Date())
-            })
+            }
             self.runLoop.add(self.timer, forMode: self.mode)
         }
 

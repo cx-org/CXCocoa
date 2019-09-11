@@ -1,6 +1,6 @@
 import Foundation
 
-extension CombineXBox where Base: AnyObject {
+extension CombineXWrapper where Base: AnyObject {
     
     public func kvoPublisher<Value>(_ keyPath: KeyPath<Base, Value>) -> KVOPublisher<Base, Value> {
         return .init(object: self.base, keyPath: keyPath)

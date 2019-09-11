@@ -2,7 +2,19 @@
 import Foundation
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension CombineXBox where Base: Timer {
+extension CombineXCompatible where Self: Timer {
+    
+    public var cx: AnyObjectCXWrapper<Timer> {
+        return .init(self)
+    }
+    
+    public static var cx: AnyObjectCXWrapper<Timer>.Type {
+        return AnyObjectCXWrapper<Timer>.self
+    }
+}
+
+@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension CombineXWrapper where Base: Timer {
 
     /// Returns a publisher that repeatedly emits the current date on the given interval.
     ///
@@ -13,7 +25,7 @@ extension CombineXBox where Base: Timer {
     ///   - mode: The run loop mode in which to run the timer.
     ///   - options: Scheduler options passed to the timer. Defaults to `nil`.
     /// - Returns: A publisher that repeatedly emits the current date on the given interval.
-    public static func publish(every interval: TimeInterval, tolerance: TimeInterval? = nil, on runLoop: RunLoop, in mode: RunLoop.Mode, options: RunLoop.CX.RunLoopScheduler.SchedulerOptions? = nil) -> Timer.CX.TimerPublisher {
+    public static func publish(every interval: TimeInterval, tolerance: TimeInterval? = nil, on runLoop: RunLoop, in mode: RunLoop.Mode, options: RunLoopCXWrapper.SchedulerOptions? = nil) -> Timer.CX.TimerPublisher {
         return .init(interval: interval, tolerance: tolerance, runLoop: runLoop, mode: mode, options: options)
     }
     

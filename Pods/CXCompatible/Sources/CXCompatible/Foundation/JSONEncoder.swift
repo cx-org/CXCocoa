@@ -2,26 +2,24 @@
 import Foundation
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension JSONEncoder: CombineXCompatible { }
+public typealias JSONEncoderCXWrapper = JSONEncoder.JSONEncoderCXWrapper
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension JSONEncoder {
+extension CombineXCompatible where Self: JSONEncoder {
     
-    public enum CX { }
-}
-
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension CombineXBox where Base: JSONEncoder {
+    public var cx: JSONEncoderCXWrapper {
+        return self
+    }
     
-    public var encoder: JSONEncoder.CX.Encoder {
-        return self.base
+    public static var cx: JSONEncoderCXWrapper.Type {
+        return JSONEncoderCXWrapper.self
     }
 }
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension JSONEncoder.CX {
+extension JSONEncoder: CombineXCompatible {
     
-    public typealias Encoder = JSONEncoder
+    public typealias JSONEncoderCXWrapper = JSONEncoder
 }
 
 #endif

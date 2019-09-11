@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UIControl {
+extension CombineXWrapper where Base: UIControl {
     
     public func controlEvent(_ events: UIControl.Event) -> ControlEventPublisher<Base> {
         return .init(control: self.base, events: events)

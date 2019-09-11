@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UITextView {
+extension CombineXWrapper where Base: UITextView {
     
     public var text: UIBinder<String> {
         return UIBinder<String>(target: self.base) {

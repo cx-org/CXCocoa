@@ -18,7 +18,7 @@ struct AssociateKey<T> {
     }
 }
 
-extension CombineXBox where Base: AnyObject {
+extension CombineXWrapper where Base: AnyObject {
     
     func getAssociated<T>(for key: AssociateKey<T>) -> T? {
         // avoid NSNull

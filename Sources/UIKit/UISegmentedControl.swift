@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UISegmentedControl {
+extension CombineXWrapper where Base: UISegmentedControl {
 
     public var selectedSegmentIndex: ControlPropertyBinder<Int> {
         return self.controlProperty(

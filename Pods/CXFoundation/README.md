@@ -1,10 +1,11 @@
 # CXFoundation([中文](README.zh_cn.md))
 
-![build](https://img.shields.io/travis/cx-org/CXFoundation)
-![release](https://img.shields.io/github/release-pre/cx-org/CXFoundation)
+[![travis](https://img.shields.io/travis/cx-org/CXFoundation)](https://travis-ci.org/cx-org/CXFoundation)
+[![release](https://img.shields.io/github/release-pre/cx-org/CXFoundation)](https://github.com/cx-org/CXFoundation/releases)
 ![install](https://img.shields.io/badge/install-spm%20%7C%20cocoapods%20%7C%20carthage-ff69b4)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20watchos%20%7C%20tvos%20%7C%20linux-lightgrey)
 ![license](https://img.shields.io/github/license/cx-org/CXFoundation?color=black)
+[![dicord](https://img.shields.io/badge/chat-discord-9cf)](https://discord.gg/cresT3X)
 
 `Combine + Foundation`, built on top of [CombineX](https://github.com/cx-org/CombineX).
 
@@ -64,7 +65,7 @@ let cancel = upstream
     }
 ```
 
-## 安装
+## Install
 
 ### Swift Package Manager
 
@@ -89,8 +90,9 @@ github "cx-org/CXFoundation" "master"
 ## Related
 
 - [CombineX](https://github.com/cx-org/CombineX)
-- [CXCocoa](https://github.com/cx-org/CXCocoa)
 - [CXCompatible](https://github.com/cx-org/CXCompatible)
+- [CXCocoa](https://github.com/cx-org/CXCocoa)
+- [CXExtensions](https://github.com/cx-org/CXExtensions)
 
 ## FAQ
 

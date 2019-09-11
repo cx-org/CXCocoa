@@ -25,7 +25,7 @@ extension NSObject {
         let subclass: AnyClass = swizzleClass(self)
 
         Global.sync(subclass) {
-            let subclassBox = CombineXBox(subclass as AnyObject)
+            let subclassBox = AnyCXWrapper(subclass as AnyObject)
             if subclassBox.getAssociated(for: hasSwizzledKey) == nil {
                 subclassBox.setAssociated(true, for: hasSwizzledKey)
                 
@@ -67,7 +67,7 @@ func swizzleClass(_ instance: NSObject) -> AnyClass {
     
     let objcClass: AnyClass = instance.objcClass
     let realClass: AnyClass = object_getClass(instance)!
-    let realClassBox = CombineXBox(realClass as AnyObject)
+    let realClassBox = AnyCXWrapper(realClass as AnyObject)
 
     if objcClass != realClass {
         // If the class is already lying about what it is, it's probably a KVO

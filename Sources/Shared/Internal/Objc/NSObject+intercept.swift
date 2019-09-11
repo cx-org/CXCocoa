@@ -38,7 +38,7 @@ extension NSObject {
             }
             
             let subclass: AnyClass = swizzleClass(self)
-            let subclassBox = CombineXBox(subclass as AnyObject)
+            let subclassBox = AnyCXWrapper(subclass as AnyObject)
             
             Global.sync(subclass) {
                 let isIntercepted = subclassBox.getAssociated(for: AssociateKeys.isIntercepted)

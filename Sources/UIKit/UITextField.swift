@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UITextField {
+extension CombineXWrapper where Base: UITextField {
     
     public var text: ControlPropertyBinder<String?> {
         return self.controlProperty(

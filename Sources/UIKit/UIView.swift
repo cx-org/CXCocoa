@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UIView {
+extension CombineXWrapper where Base: UIView {
     
     public var isHidden: UIBinder<Bool> {
         return UIBinder(target: self.base) {

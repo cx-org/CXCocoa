@@ -1,6 +1,6 @@
 {
   "name": "CXCompatible",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.3",
   "summary": "CombineX Shims",
   "homepage": "https://github.com/cx-org/CXCompatible",
   "license": {
@@ -11,6 +11,7 @@
     "Quentin Jin": "luoxiustm@gmail.com"
   },
   "swift_versions": [
+    "5.0",
     "5.0"
   ],
   "platforms": {
@@ -21,7 +22,7 @@
   },
   "source": {
     "git": "https://github.com/cx-org/CXCompatible.git",
-    "tag": "0.0.1-beta.1"
+    "tag": "0.0.1-beta.3"
   },
   "source_files": "Sources/CXCompatible/**/*.swift",
   "swift_version": "5.0"

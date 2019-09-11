@@ -1,6 +1,6 @@
 import Foundation
 
-extension CombineXBox where Base: NSObject {
+extension CombineXWrapper where Base: NSObject {
     
     /// Create a publisher which sends a `next` event at the end of every
     /// invocation of `selector` on the object.

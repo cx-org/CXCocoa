@@ -1,6 +1,6 @@
 import UIKit
 
-extension CombineXBox where Base: UIButton {
+extension CombineXWrapper where Base: UIButton {
 
     public var tap: ControlEventPublisher<Base> {
         return self.controlEvent(.touchUpInside)

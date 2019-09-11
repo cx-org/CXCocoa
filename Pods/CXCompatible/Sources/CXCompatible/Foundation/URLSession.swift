@@ -2,7 +2,19 @@
 import Foundation
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension CombineXBox where Base: URLSession {
+extension CombineXCompatible where Self: URLSession {
+    
+    public var cx: AnyObjectCXWrapper<URLSession> {
+        return .init(self)
+    }
+    
+    public static var cx: AnyObjectCXWrapper<URLSession>.Type {
+        return AnyObjectCXWrapper<URLSession>.self
+    }
+}
+
+@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension CombineXWrapper where Base: URLSession {
     
     /// Returns a publisher that wraps a URL session data task for a given URL.
     ///

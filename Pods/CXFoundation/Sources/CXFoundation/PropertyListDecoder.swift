@@ -2,34 +2,27 @@ import CombineX
 import Foundation
 
 #if !os(Linux)
-extension PropertyListDecoder: CombineXCompatible { }
+public typealias PropertyListDecoderCXWrapper = PropertyListDecoder.PropertyListDecoderCXWrapper
 
-extension PropertyListDecoder {
+extension CombineXCompatible where Self: PropertyListDecoder {
     
-    public enum CX { }
-}
-
-extension CombineXBox where Base: PropertyListDecoder {
+    public var cx: PropertyListDecoderCXWrapper {
+        return PropertyListDecoderCXWrapper(self)
+    }
     
-    public var decoder: PropertyListDecoder.CX.Decoder {
-        return .init(self.base)
+    public static var cx: PropertyListDecoderCXWrapper.Type {
+        return PropertyListDecoderCXWrapper.self
     }
 }
 
-extension PropertyListDecoder.CX {
+extension PropertyListDecoder: CombineXCompatible {
     
-    public struct Decoder: CombineX.TopLevelDecoder {
-        
-        let decoder: PropertyListDecoder
-        
-        init(_ decoder: PropertyListDecoder) {
-            self.decoder = decoder
-        }
+    public class PropertyListDecoderCXWrapper: AnyObjectCXWrapper<PropertyListDecoder>, CombineX.TopLevelDecoder {
      
         public typealias Input = Data
         
         public func decode<T>(_ type: T.Type, from: Input) throws -> T where T : Decodable {
-            return try self.decoder.decode(type, from: from)
+            return try self.base.decode(type, from: from)
         }
     }
 }

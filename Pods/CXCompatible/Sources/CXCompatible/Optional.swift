@@ -33,6 +33,6 @@ extension Optional {
 extension Optional: CombineXCompatible { }
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension CombineXBox where Base: OptionalProtocol { }
+extension CombineXWrapper where Base: OptionalProtocol { }
 
 #endif

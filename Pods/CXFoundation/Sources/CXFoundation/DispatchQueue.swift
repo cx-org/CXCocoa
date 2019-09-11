@@ -10,23 +10,22 @@ extension DispatchQueue {
 }
 #endif
 
+public typealias DispatchQueueCXWrapper = DispatchQueue.DispatchQueueCXWrapper
 
-extension CombineXBox where Base: DispatchQueue {
+extension CombineXCompatible where Self: DispatchQueue {
     
-    public var scheduler: DispatchQueue.CX.DispatchQueueScheduler {
-        return .init(self.base)
+    public var cx: DispatchQueueCXWrapper {
+        return DispatchQueueCXWrapper(self)
+    }
+    
+    public static var cx: DispatchQueueCXWrapper.Type {
+        return DispatchQueueCXWrapper.self
     }
 }
 
-extension DispatchQueue.CX {
+extension DispatchQueue {
     
-    public struct DispatchQueueScheduler: CombineX.Scheduler {
-        
-        let q: DispatchQueue
-        
-        init(_ q: DispatchQueue) {
-            self.q = q
-        }
+    public class DispatchQueueCXWrapper: AnyObjectCXWrapper<DispatchQueue>, CombineX.Scheduler {
         
         /// The scheduler time type used by the dispatch queue.
         public struct SchedulerTimeType : Strideable, Hashable {
@@ -364,12 +363,12 @@ extension DispatchQueue.CX {
 
         /// Performs the action at the next possible opportunity.
         public func schedule(options: SchedulerOptions?, _ action: @escaping () -> Void) {
-            self.q.async(group: options?.group, qos: options?.qos ?? .unspecified, flags: options?.flags ?? [], execute: action)
+            self.base.async(group: options?.group, qos: options?.qos ?? .unspecified, flags: options?.flags ?? [], execute: action)
         }
 
         /// Performs the action at some time after the specified date.
         public func schedule(after date: SchedulerTimeType, tolerance: SchedulerTimeType.Stride, options: SchedulerOptions?, _ action: @escaping () -> Void) {
-            let timer = DispatchSource.makeTimerSource(queue: self.q)
+            let timer = DispatchSource.makeTimerSource(queue: self.base)
             var ref: DispatchSourceTimer? = timer
             
             timer.setEventHandler() {
@@ -386,7 +385,7 @@ extension DispatchQueue.CX {
         /// Performs the action at some time after the specified date, at the specified
         /// frequency, optionally taking into account tolerance if possible.
         public func schedule(after date: SchedulerTimeType, interval: SchedulerTimeType.Stride, tolerance: SchedulerTimeType.Stride, options: SchedulerOptions?, _ action: @escaping () -> Void) -> Cancellable {
-            let timer = DispatchSource.makeTimerSource(queue: self.q)
+            let timer = DispatchSource.makeTimerSource(queue: self.base)
             
             timer.setEventHandler() {
                 action()

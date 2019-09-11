@@ -12,9 +12,9 @@ This library is still in beta, so **do not use it in production!**
 
 🐱
 
-## What is CombineX.Cocoa
+## What is CXCocoa
 
-Like ReactiveCocoa and ReaciveSwift, RxCocoa and RxSwift, CXCocoa is a derivative of [CombineX](https://github.com/cx-org/CombineX). It provides [Combine](https://developer.apple.com/documentation/combine) extensions to Cocoa Framework, which allows you to write Cocoa-related asynchronous code in an elegant way.
+Like ReactiveCocoa and ReaciveSwift, RxCocoa and RxSwift, CXCocoa is a derivative of [CombineX](https://github.com/cx-org/CombineX). It provides [Combine](https://developer.apple.com/documentation/combine) extensions to Cocoa Framework, making it easier to write Cocoa-related asynchronous code.
 
 It includes but is not limited to：
 
@@ -39,26 +39,18 @@ You can freely switch the underlying dependency between `CombineX` and `Combine`
 ### CocoaPods
 
 ```ruby
-# forcing master branches for now.
-pod 'CombineX', :git => 'https://github.com/cx-org/CombineX.git', :branch => 'master'
-pod 'CXFoundation', :git => 'https://github.com/cx-org/CXFoundation.git', :branch => 'master'
-  
-
 pod 'CXCocoa', :git => 'https://github.com/cx-org/CXCocoa.git', :branch => 'master'
 ```
 
 ### Carthage
 
 ```carthage
-github "cx-org/CombineX" "master"
-github "cx-org/CXFoundation" "master"
-
 github "cx-org/CXCocoa" "master"
 ```
 
 ## What is Combine/CombineX
 
-See [here](https://github.com/cx-org/CombineX#what-is-combine).
+Check [here](https://github.com/cx-org/CombineX#what-is-combine).
 
 ## Contribution
 
@@ -68,7 +60,7 @@ You can:
 
 1. Add more control extensions, especially for macOS controls.
 2. Add documentation.
-3. Make your suggestions(new feature, improvement, bug...)
+3. Make your suggestions.
 4. Star! Then tell your friends!
 
 **Because the upstream CombineX is still in beta, if you encounter a strange problem in this library - then it may drift from upstream. 🤣**

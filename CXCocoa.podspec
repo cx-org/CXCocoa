@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
     s.source = { :git => "https://github.com/cx-org/CXCocoa.git", :tag => "#{s.version}" }
     s.source_files  = "Sources/Shared/**/*.{swift,h,m}"
     s.ios.source_files = "Sources/UIKit/**/*.swift"
+    s.macos.source_files = "Sources/AppKit/**/*.swift"
 
     s.dependency 'CXFoundation', '~> 0.0.1-beta.5'
     s.dependency 'CXCompatible', '~> 0.0.1-beta.4'

@@ -11,6 +11,7 @@
 		6227F2DE230E4A1400807B54 /* UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227F2DD230E4A1400807B54 /* UIPickerView.swift */; };
 		6227F2E0230E4C2100807B54 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227F2DF230E4C2100807B54 /* UIView.swift */; };
 		6238D3C7C82CAF747ED56F38 /* Pods_CXCocoa_CXCocoa_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5BF1258B1135AA07CCE223 /* Pods_CXCocoa_CXCocoa_tvOS.framework */; };
+		62E8D22923332D3A00A28F03 /* NSControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8D22823332D3A00A28F03 /* NSControl.swift */; };
 		664A3DC323250254006F8CAB /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A3DC223250254006F8CAB /* @_exported.swift */; };
 		664A3DC423250254006F8CAB /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A3DC223250254006F8CAB /* @_exported.swift */; };
 		664A3DC523250254006F8CAB /* @_exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A3DC223250254006F8CAB /* @_exported.swift */; };
@@ -151,6 +152,7 @@
 		6227F2DA230E491F00807B54 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		6227F2DD230E4A1400807B54 /* UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerView.swift; sourceTree = "<group>"; };
 		6227F2DF230E4C2100807B54 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		62E8D22823332D3A00A28F03 /* NSControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSControl.swift; sourceTree = "<group>"; };
 		64A7FF6F2FAB4DEC916EDFC4 /* Pods-CXCocoa-CXCocoa-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXCocoa-CXCocoa-iOS.release.xcconfig"; path = "Target Support Files/Pods-CXCocoa-CXCocoa-iOS/Pods-CXCocoa-CXCocoa-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		664A3DC223250254006F8CAB /* @_exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "@_exported.swift"; sourceTree = "<group>"; };
 		664ED8D4230C2C8300287D68 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
@@ -245,6 +247,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62E8D22723332D2000A28F03 /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				62E8D22823332D3A00A28F03 /* NSControl.swift */,
+			);
+			path = AppKit;
+			sourceTree = "<group>";
+		};
 		6668BE9D23099FCD006C61E6 = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +291,7 @@
 		669225472309A11E0078CE5E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				62E8D22723332D2000A28F03 /* AppKit */,
 				66FD0EF523241C9600E519B9 /* Shared */,
 				6668BED92309A23F006C61E6 /* conf */,
 				669225692309A7A70078CE5E /* UIKit */,
@@ -835,6 +846,7 @@
 				669225AB2309A7A70078CE5E /* Objc.swift in Sources */,
 				66AD7E27230D93F80071B6F2 /* UIBinder.swift in Sources */,
 				669225A32309A7A70078CE5E /* NSObject+MethodInvocation.swift in Sources */,
+				62E8D22923332D3A00A28F03 /* NSControl.swift in Sources */,
 				669225BF2309A7A70078CE5E /* Selector+alias.swift in Sources */,
 				6692257F2309A7A70078CE5E /* _cx_objc.m in Sources */,
 				669225832309A7A70078CE5E /* UIScheduler.swift in Sources */,
@@ -976,7 +988,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1058,7 +1070,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

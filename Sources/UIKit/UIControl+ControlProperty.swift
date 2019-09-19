@@ -7,7 +7,7 @@ extension CombineXWrapper where Base: UIControl {
         getter: @escaping (Base) -> Value,
         setter: @escaping (Base, Value) -> Void
     )
-        -> ControlPropertyBinder<Value>
+        -> ControlProperty<Value>
     {
         let subject = CurrentValueSubject<Value, Never>(getter(self.base))
         self.controlEvent(events).map(getter).subscribe(subject).cancel(by: self.base)
@@ -16,7 +16,7 @@ extension CombineXWrapper where Base: UIControl {
     }
 }
 
-public struct ControlPropertyBinder<Value>: Publisher, Binder {
+public struct ControlProperty<Value>: Publisher, Binder {
     public typealias Output = Value
     public typealias Failure = Never
     

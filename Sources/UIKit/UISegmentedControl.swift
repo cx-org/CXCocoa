@@ -2,7 +2,7 @@ import UIKit
 
 extension CombineXWrapper where Base: UISegmentedControl {
 
-    public var selectedSegmentIndex: ControlPropertyBinder<Int> {
+    public var selectedSegmentIndex: ControlProperty<Int> {
         return self.controlProperty(
             events: [.valueChanged],
             getter: { $0.selectedSegmentIndex },

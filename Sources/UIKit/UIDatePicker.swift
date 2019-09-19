@@ -2,7 +2,7 @@ import UIKit
 
 extension CombineXWrapper where Base: UIDatePicker {
     
-    public var date: ControlPropertyBinder<Date> {
+    public var date: ControlProperty<Date> {
         return self.controlProperty(
             events: .valueChanged,
             getter: { $0.date },

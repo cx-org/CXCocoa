@@ -2,7 +2,7 @@ import UIKit
 
 extension CombineXWrapper where Base: UITextField {
     
-    public var text: ControlPropertyBinder<String?> {
+    public var text: ControlProperty<String?> {
         return self.controlProperty(
             events: [.allEditingEvents, .valueChanged],
             getter: { $0.text },

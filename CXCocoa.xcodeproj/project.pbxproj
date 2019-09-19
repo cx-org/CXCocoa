@@ -133,7 +133,7 @@
 		66C29D26230AD62F00DE6A70 /* TakeWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D24230AD62F00DE6A70 /* TakeWhile.swift */; };
 		66C29D27230AD62F00DE6A70 /* TakeWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D24230AD62F00DE6A70 /* TakeWhile.swift */; };
 		66C29D28230AD62F00DE6A70 /* TakeWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D24230AD62F00DE6A70 /* TakeWhile.swift */; };
-		66C29D2A230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D29230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift */; };
+		66C29D2A230AE92A00DE6A70 /* UIControl+ControlProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D29230AE92A00DE6A70 /* UIControl+ControlProperty.swift */; };
 		66C29D2F230AF22B00DE6A70 /* UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D2E230AF22B00DE6A70 /* UIDatePicker.swift */; };
 		66C29D31230AF2C300DE6A70 /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D30230AF2C300DE6A70 /* UISwitch.swift */; };
 		66C29D33230AF30500DE6A70 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C29D32230AF30400DE6A70 /* UITextField.swift */; };
@@ -200,7 +200,7 @@
 		66AD7E36230D9DAE0071B6F2 /* UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItem.swift; sourceTree = "<group>"; };
 		66C29D1E230ACC7E00DE6A70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66C29D24230AD62F00DE6A70 /* TakeWhile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeWhile.swift; sourceTree = "<group>"; };
-		66C29D29230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+ControlPropertyBinder.swift"; sourceTree = "<group>"; };
+		66C29D29230AE92A00DE6A70 /* UIControl+ControlProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+ControlProperty.swift"; sourceTree = "<group>"; };
 		66C29D2E230AF22B00DE6A70 /* UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePicker.swift; sourceTree = "<group>"; };
 		66C29D30230AF2C300DE6A70 /* UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitch.swift; sourceTree = "<group>"; };
 		66C29D32230AF30400DE6A70 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -360,7 +360,7 @@
 			children = (
 				6692256B2309A7A70078CE5E /* UIButton.swift */,
 				6692256A2309A7A70078CE5E /* UIControl+ControlEventPublisher.swift */,
-				66C29D29230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift */,
+				66C29D29230AE92A00DE6A70 /* UIControl+ControlProperty.swift */,
 				66C29D2E230AF22B00DE6A70 /* UIDatePicker.swift */,
 				6692256C2309A7A70078CE5E /* UILabel.swift */,
 				6692256D2309A7A70078CE5E /* UISegmentedControl.swift */,
@@ -754,7 +754,7 @@
 				669225982309A7A70078CE5E /* NSLock.swift in Sources */,
 				669225D42309A7A70078CE5E /* UILabel.swift in Sources */,
 				66AD7E29230D96F50071B6F2 /* NSObject+intercept.swift in Sources */,
-				66C29D2A230AE92A00DE6A70 /* UIControl+ControlPropertyBinder.swift in Sources */,
+				66C29D2A230AE92A00DE6A70 /* UIControl+ControlProperty.swift in Sources */,
 				669225A42309A7A70078CE5E /* DelegateProxy.swift in Sources */,
 				664A3DC323250254006F8CAB /* @_exported.swift in Sources */,
 			);
